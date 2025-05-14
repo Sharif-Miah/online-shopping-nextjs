@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import SignInOut from '../auth/SignInOut';
 
 const Navbar = () => {
   return (
@@ -14,7 +15,7 @@ const Navbar = () => {
           <div className='mr-3'>
             <ul className=' mx-auto flex gap-6 items-center text-white font-normal '>
               <li className='text-white text-lg hover:text-gray-400 duration-500'>
-                <Link href='/login'>login</Link>
+                <Link href='/login'>Login</Link>
               </li>
 
               <li className='dropdown inline-block relative  text-whitte text-lg hover:text-gray-400 duration-500 '>

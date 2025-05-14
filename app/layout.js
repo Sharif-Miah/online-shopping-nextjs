@@ -3,6 +3,7 @@ import './globals.css';
 import Navbar from '@/components/sheard/Navbar';
 import Footer from '@/components/sheard/Footer';
 import { dbConnect } from '@/services/mongo';
+import AuthProvider from './provider/AuthProvider';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -28,10 +29,12 @@ export default async function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <div>
+          {/* <AuthProvider> */}
           <Navbar />
           {children}
+          <Footer />
+          {/* </AuthProvider> */}
         </div>
-        <Footer />
       </body>
     </html>
   );
