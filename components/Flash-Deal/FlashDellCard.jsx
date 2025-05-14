@@ -19,41 +19,6 @@ const FlashDellCard = () => {
           price='500.00'
           discountPrice='400.00'
         />
-        <CardWithFlasDeal
-          img='https://6valley.6amtech.com/storage/app/public/product/thumbnail/2023-06-13-648861be889e2.png'
-          percen='10'
-          title='Exclusive &...'
-          price='500.00'
-          discountPrice='400.00'
-        />
-        <CardWithFlasDeal
-          img='https://6valley.6amtech.com/storage/app/public/product/thumbnail/2023-06-13-6488413bebea3.png'
-          percen='10'
-          title='Exclusive &...'
-          price='500.00'
-          discountPrice='400.00'
-        />
-        <CardWithFlasDeal
-          img='https://6valley.6amtech.com/storage/app/public/product/thumbnail/2023-06-13-64884cfe79147.png'
-          percen='10'
-          title='Exclusive &...'
-          price='500.00'
-          discountPrice='400.00'
-        />
-        <CardWithFlasDeal
-          img='https://6valley.6amtech.com/storage/app/public/product/thumbnail/2023-06-13-64884ed82e40d.png'
-          percen='10'
-          title='Exclusive &...'
-          price='500.00'
-          discountPrice='400.00'
-        />
-        <CardWithFlasDeal
-          img='https://6valley.6amtech.com/storage/app/public/product/thumbnail/2023-06-13-64884610598d4.png'
-          percen='10'
-          title='Exclusive &...'
-          price='500.00'
-          discountPrice='400.00'
-        />
       </div>
     </section>
   );

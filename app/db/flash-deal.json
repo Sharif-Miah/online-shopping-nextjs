@@ -1,0 +1,18 @@
+[
+    {
+        "_id": {
+          "$oid": "661e259be4ffc982667a3ef0"
+        },
+        "title": "Exclusive & Fashionable Suit For Men",
+        "details": "A stylish and fashionable suit for men offers versatility and sophistication, making it a versatile choice for various occasions. From classic navy and charcoal options for formal events to bolder shades like green or even velvet for a touch of personality, the key is finding a fit and style that suits your individual preferences and the occasion. ",
+        "imageUrl": "https://res.cloudinary.com/atapas/image/upload/v1713263923/youtube/eventry/Web-Summit-2023-highlights_pdmals.jpg",
+        "interested_ids": [],
+        "going_ids": [],
+        "swags": [
+          "Free T-Shirts",
+          "Netowrking",
+          "Free WIFI"
+        ],
+        "__v": 31
+      }
+]

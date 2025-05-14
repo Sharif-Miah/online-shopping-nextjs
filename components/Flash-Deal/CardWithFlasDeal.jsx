@@ -17,7 +17,7 @@ const CardWithFlasDeal = ({ img, price, discountPrice, title, percen }) => {
             <Image
               src={img}
               alt='cart-img'
-              className='rounded-xl'
+              className='rounded-xl mx-auto'
               width={100}
               height={100}
             />
