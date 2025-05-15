@@ -3,14 +3,6 @@
 import { useAuth } from '@/app/hooks/useAuth';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from '@/components/ui/dialog';
 
 const SignInOut = () => {
   const { auth, setAuth } = useAuth();

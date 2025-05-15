@@ -1,13 +1,5 @@
 import LoginForm from '@/components/auth/LoginForm';
 import Link from 'next/link';
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from '@/components/ui/dialog';
 
 export const metadata = {
   title: 'Online Shopping | Login',

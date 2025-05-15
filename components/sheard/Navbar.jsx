@@ -9,8 +9,7 @@ const Navbar = () => {
           <Link
             href='/'
             className='flex justify-between mt-1 text-xl mx-auto font-normal text-white ml-4 px-3  rounded cursor-pointer'>
-            Online Shopping
-            <div className=' text-[#1455ac]'></div>
+            <div className=' text-[#fff]'>𝓢𝓸𝓬𝓲𝓪𝓵 𝓒𝓲𝓻𝓬𝓵𝓮</div>
           </Link>
           <div className='mr-3'>
             <ul className=' mx-auto flex gap-6 items-center text-white font-normal '>
