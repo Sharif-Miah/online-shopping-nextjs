@@ -33,6 +33,7 @@ export default async function RootLayout({ children }) {
             <Navbar />
             {children}
             <Footer />
+            <div id='modal-root-content'> </div>
           </div>
         </AuthProvider>
       </body>
