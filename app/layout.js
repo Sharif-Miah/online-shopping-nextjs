@@ -28,13 +28,13 @@ export default async function RootLayout({ children }) {
     <html lang='en'>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <div>
-          {/* <AuthProvider> */}
-          <Navbar />
-          {children}
-          <Footer />
-          {/* </AuthProvider> */}
-        </div>
+        <AuthProvider>
+          <div>
+            <Navbar />
+            {children}
+            <Footer />
+          </div>
+        </AuthProvider>
       </body>
     </html>
   );

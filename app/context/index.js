@@ -1,7 +1,3 @@
-import React from 'react';
+import { createContext } from 'react';
 
-const index = () => {
-  return <div>index</div>;
-};
-
-export default index;
+export const AuthContext = createContext();

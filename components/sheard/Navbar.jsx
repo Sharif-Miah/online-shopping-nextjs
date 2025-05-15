@@ -14,11 +14,11 @@ const Navbar = () => {
           </Link>
           <div className='mr-3'>
             <ul className=' mx-auto flex gap-6 items-center text-white font-normal '>
-              <li className='text-white text-lg hover:text-gray-400 duration-500'>
-                <Link href='/login'>Login</Link>
+              <li className='text-white  text-lg'>
+                <SignInOut />
               </li>
 
-              <li className='dropdown inline-block relative  text-whitte text-lg hover:text-gray-400 duration-500 '>
+              <li className='text-lg text-white '>
                 <div className='flex'>
                   <Link
                     href='/'

@@ -1,16 +1,27 @@
 'use client';
 
 import { performLogin } from '@/app/actions/userAction';
+import { useAuth } from '@/app/hooks/useAuth';
+import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 
 const LoginForm = () => {
   const [error, setError] = useState('');
+  const { setAuth } = useAuth();
+  const router = useRouter();
 
   async function onSubmit(event) {
     event.preventDefault();
     try {
       const formData = new FormData(event.currentTarget);
-      await performLogin(formData);
+      const found = await performLogin(formData);
+
+      if (found) {
+        setAuth(found);
+        router.push('/');
+      } else {
+        setError('Please Provide a valid login credential');
+      }
     } catch (err) {
       setError(err.message);
     }
