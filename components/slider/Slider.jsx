@@ -1,6 +1,5 @@
 'use client';
 
-import React from 'react';
 import slider1 from '@/public/bannerimg.webp';
 import slider2 from '@/public/slider2.jpg';
 import slider3 from '@/public/slider3.jpg';

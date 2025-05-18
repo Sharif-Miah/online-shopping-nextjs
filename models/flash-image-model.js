@@ -28,4 +28,4 @@ const schema = new Schema({
 });
 
 export const flashModel =
-  mongoose.models.flashImage ?? mongoose.model('flashImage', schema);
+  mongoose.models.flashimages ?? mongoose.model('flashimages', schema);

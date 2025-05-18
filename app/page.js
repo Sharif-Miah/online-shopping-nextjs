@@ -1,4 +1,4 @@
-import HeroPage from './Hero/page';
+import MainPage from '@/components/MainPage/MainPage';
 
 export const metadata = {
   title: 'Online Shopping | Home',
@@ -8,7 +8,7 @@ export const metadata = {
 export default function Home() {
   return (
     <div>
-      <HeroPage />
+      <MainPage />
     </div>
   );
 }

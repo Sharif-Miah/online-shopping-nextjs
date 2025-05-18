@@ -2,12 +2,9 @@ import FlashDellCard from '@/components/Flash-Deal/FlashDellCard';
 import DeliveryQuestion from '@/components/sheard/DeliveryQuestion';
 import QuestionAnswer from '@/components/sheard/QuestionAnswer';
 import Slider from '@/components/slider/Slider';
-import { getALLflashImage } from '../db/quries';
+import { flashModel } from '@/models/flash-image-model';
 
-const HeroPage = async () => {
-  const AllFlashs = await getALLflashImage();
-  console.log(AllFlashs);
-
+const MainPage = async () => {
   return (
     <div className='container mx-auto'>
       <Slider />
@@ -18,4 +15,4 @@ const HeroPage = async () => {
   );
 };
 
-export default HeroPage;
+export default MainPage;

@@ -7,8 +7,8 @@ import { userModel } from '@/models/user-model';
 import { flashModel } from '@/models/flash-image-model';
 
 async function getALLflashImage() {
-  const allFlash = await flashModel.find();
-  return allFlash;
+  const allFlashImages = await flashModel.find().lean();
+  return replaceMongoIdInArray(allFlashImages);
 }
 
 async function createUser(user) {
@@ -24,4 +24,4 @@ async function findUserByCredentials(credentials) {
   return null;
 }
 
-export { createUser, findUserByCredentials, getALLflashImage };
+export { getALLflashImage, createUser, findUserByCredentials };
