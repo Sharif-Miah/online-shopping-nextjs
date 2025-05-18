@@ -3,6 +3,7 @@
 import { useAuth } from '@/app/hooks/useAuth';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
+import Modal from '../Modal';
 
 const SignInOut = () => {
   const { auth, setAuth } = useAuth();

@@ -1,6 +1,15 @@
-import { replaceMongoIdInObject } from '@/utils/data-utils';
+import {
+  replaceMongoIdInArray,
+  replaceMongoIdInObject,
+} from '@/utils/data-utils';
 
 import { userModel } from '@/models/user-model';
+import { flashModel } from '@/models/flash-image-model';
+
+async function getALLflashImage() {
+  const allFlash = await flashModel.find();
+  return allFlash;
+}
 
 async function createUser(user) {
   return await userModel.create(user);
@@ -15,4 +24,4 @@ async function findUserByCredentials(credentials) {
   return null;
 }
 
-export { createUser, findUserByCredentials };
+export { createUser, findUserByCredentials, getALLflashImage };

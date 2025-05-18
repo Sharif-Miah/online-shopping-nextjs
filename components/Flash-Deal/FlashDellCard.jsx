@@ -1,7 +1,6 @@
 import SheardTitle from '../SheardTitle';
 import ViewButton from '../ViewButton';
 import CardWithFlasDeal from './CardWithFlasDeal';
-import man from '@/public/man.png';
 
 const FlashDellCard = () => {
   return (
@@ -13,7 +12,7 @@ const FlashDellCard = () => {
 
       <div className='grid grid-cols-1 gap-1 justify-center  lg:grid-cols-4 mt-4'>
         <CardWithFlasDeal
-          img={man}
+          img='https://res.cloudinary.com/dnuxd0pd0/image/upload/v1747533497/iphon_o6twdl.webp'
           percen='10'
           title='Exclusive &...'
           price='500.00'

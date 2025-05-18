@@ -1,7 +1,4 @@
-import FlashDellCard from '@/components/Flash-Deal/FlashDellCard';
-import DeliveryQuestion from '@/components/sheard/DeliveryQuestion';
-import QuestionAnswer from '@/components/sheard/QuestionAnswer';
-import Slider from '@/components/slider/Slider';
+import HeroPage from './Hero/page';
 
 export const metadata = {
   title: 'Online Shopping | Home',
@@ -10,11 +7,8 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <div className='container mx-auto'>
-      <Slider />
-      <FlashDellCard />
-      <DeliveryQuestion />
-      <QuestionAnswer />
+    <div>
+      <HeroPage />
     </div>
   );
 }
