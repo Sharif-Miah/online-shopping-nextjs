@@ -6,7 +6,6 @@ import PriceItemComponent from '../sheard/PriceItemComponent';
 import Link from 'next/link';
 
 const CardWithFlasDeal = ({ photo }) => {
-  console.log(photo);
   return (
     <Card className='w-[220px] rounded mb-6 mx-auto '>
       <CardContent className='px-2'>

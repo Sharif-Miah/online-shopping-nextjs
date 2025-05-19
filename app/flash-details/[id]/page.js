@@ -8,7 +8,6 @@ import Image from 'next/image';
 
 const FlashDetailsPage = async ({ params: { id } }) => {
   const flashProduct = await getFlashById(id);
-
   return (
     <section className='max-w-7xl mx-auto'>
       <div className='my-8'>
@@ -30,12 +29,12 @@ const FlashDetailsPage = async ({ params: { id } }) => {
               {/* Last column  */}
               <div className='flex-shrink-0 w-full md:w-1/3 '>
                 <DeleveryQA />
-                <SimilarProduct />
+                {/* <SimilarProduct /> */}
               </div>
             </div>
           </div>
         </div>
-        <p className='w-2/3 sm:mx-auto lg:ml-24  text-lg'>
+        <p className='w-2/3 sm:mx-auto lg:ml-24 text-md leading-6'>
           {flashProduct.details}
         </p>
         <QuestionAnswer />
