@@ -2,8 +2,6 @@ import { getFlashById } from '@/app/db/quries';
 import DeleveryQA from '@/components/DeleveryQA';
 import ProductCalculate from '@/components/ProductCalculate';
 import QuestionAnswer from '@/components/sheard/QuestionAnswer';
-import SimilarProduct from '@/components/SimilarProduct';
-
 import Image from 'next/image';
 
 const FlashDetailsPage = async ({ params: { id } }) => {
@@ -25,7 +23,7 @@ const FlashDetailsPage = async ({ params: { id } }) => {
           <div className='flex-grow w-full md:w-2/3  ml-5'>
             <div className='flex flex-col md:flex-row gap-2'>
               {/* Middle Column  */}
-              <ProductCalculate />
+              <ProductCalculate flashProduct={flashProduct} />
               {/* Last column  */}
               <div className='flex-shrink-0 w-full md:w-1/3 '>
                 <DeleveryQA />

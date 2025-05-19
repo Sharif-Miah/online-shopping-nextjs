@@ -1,6 +1,7 @@
+import Link from 'next/link';
 import { FaHeart, FaStar } from 'react-icons/fa';
 
-const ProductCalculate = () => {
+const ProductCalculate = ({ flashProduct }) => {
   return (
     <div className='flex-grow w-full md:w-2/3 '>
       <div>
@@ -83,9 +84,11 @@ const ProductCalculate = () => {
         </div>
 
         <div className='mt-5 flex'>
-          <button className='bg-[#dd7f13] hover:bg-[#c47112] text-white font-normal text-md  py-2 mt-0  ml-2 border-black px-5  rounded'>
-            Buy Now
-          </button>
+          <Link href={`/flash-details/${flashProduct.id}/payment`}>
+            <button className='bg-[#dd7f13] hover:bg-[#c47112] text-white font-normal text-md  py-2 mt-0  ml-2 border-black px-5  rounded'>
+              Buy Now
+            </button>
+          </Link>
 
           <button className='bg-[#1455ac] hover:bg-[#0f468f] text-white font-normal text-md  py-2 mt-0  ml-2 border-black px-3  rounded'>
             Add to Card

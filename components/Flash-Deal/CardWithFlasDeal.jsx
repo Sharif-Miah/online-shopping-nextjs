@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 const CardWithFlasDeal = ({ photo }) => {
   return (
-    <Card className='w-[220px] rounded mb-6 mx-auto '>
+    <Card className='w-[250px] rounded mb-6 mx-auto '>
       <CardContent className='px-2'>
         <div>
           <div className=' mt-3 relative'>
@@ -18,8 +18,8 @@ const CardWithFlasDeal = ({ photo }) => {
               src={photo.imageUrl}
               alt='cart-img'
               className='rounded-xl mx-auto'
-              width={170}
-              height={100}
+              width={190}
+              height={190}
             />
           </div>
         </div>
@@ -46,7 +46,7 @@ const CardWithFlasDeal = ({ photo }) => {
         </div>
       </CardContent>
       <CardFooter className='justify-center'>
-        <Link href='/'>
+        <Link href={`/flash-details/${photo.id}/payment`}>
           <button className='bg-[#1455ac]  py-1 px-3 rounded text-white font-medium text-md'>
             Buy Now
           </button>
