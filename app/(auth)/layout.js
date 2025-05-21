@@ -1,20 +1,9 @@
 import localFont from 'next/font/local';
-import './globals.css';
+import '../globals.css';
 import Navbar from '@/components/sheard/Navbar';
 import Footer from '@/components/sheard/Footer';
 import { dbConnect } from '@/services/mongo';
-import AuthProvider from './provider/AuthProvider';
-
-const geistSans = localFont({
-  src: './fonts/GeistVF.woff',
-  variable: '--font-geist-sans',
-  weight: '100 900',
-});
-const geistMono = localFont({
-  src: './fonts/GeistMonoVF.woff',
-  variable: '--font-geist-mono',
-  weight: '100 900',
-});
+import AuthProvider from '../provider/AuthProvider';
 
 export const metadata = {
   title: 'Online Shopping',
@@ -26,11 +15,10 @@ export default async function RootLayout({ children }) {
 
   return (
     <html lang='en'>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={` antialiased`}>
         <AuthProvider>
           <div>
-            <Navbar />
+            <Navbar sidemenu={false} />
             {children}
             <Footer />
             <div id='modal-root-content'> </div>
