@@ -1,7 +1,7 @@
 'use server';
 
-const { createUser, findUserByCredentials } = require('@/app/db/quries');
-const { redirect } = require('next/navigation');
+const { createUser } = require('@/app/db/quries');
+import { signIn } from '@/auth';
 
 async function registerUser(formData) {
   const user = Object.fromEntries(formData);
@@ -9,16 +9,17 @@ async function registerUser(formData) {
   redirect('/login');
 }
 
-async function performLogin(formData) {
+async function login(formData) {
   try {
-    const credential = {};
-    credential.email = formData.get('email');
-    credential.password = formData.get('password');
-    const found = await findUserByCredentials(credential);
-    return found;
+    const response = await signIn('credentials', {
+      email: formData.get('email'),
+      password: formData.get('password'),
+      redirect: false,
+    });
+    return response;
   } catch (error) {
-    throw error;
+    throw new Error(error);
   }
 }
 
-export { registerUser, performLogin };
+export { registerUser, login };

@@ -1,37 +1,21 @@
 'use client';
 
-import { useAuth } from '@/app/hooks/useAuth';
-import Link from 'next/link';
-import { useRouter } from 'next/navigation';
-import Modal from '../Modal';
+import { signOut } from 'next-auth/react';
+import { MdOutlineLogout } from 'react-icons/md';
 
 const SignInOut = () => {
-  const { auth, setAuth } = useAuth();
-  const router = useRouter();
-
-  const logout = () => {
-    setAuth(null);
-    router.push('/login');
-  };
-
   return (
-    <div>
-      {auth ? (
-        <>
-          <span className='mx-2'>Hello, {auth?.name}</span>
-          <span className='mx-1'>|</span>
-          <a
-            className='cursor-pointer'
-            onClick={logout}>
-            Logout
-          </a>
-        </>
-      ) : (
-        <>
-          <Link href='/login'>Login</Link>
-        </>
-      )}
-    </div>
+    <button
+      title='Logout'
+      onClick={() =>
+        signOut({
+          callbackUrl: 'http://localhost:3000/login',
+        })
+      }>
+      <div className=''>
+        <MdOutlineLogout className=' flex items-center' />
+      </div>
+    </button>
   );
 };
 

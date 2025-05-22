@@ -1,7 +1,9 @@
 import Link from 'next/link';
+import { auth } from '@/auth';
 import SignInOut from '../auth/SignInOut';
 
-const Navbar = ({ sidemenu }) => {
+const Navbar = async ({ sidemenu }) => {
+  const session = await auth();
   return (
     <navbar>
       <section className=' bg-[#1455ac] py-2'>
@@ -14,10 +16,6 @@ const Navbar = ({ sidemenu }) => {
           {sidemenu && (
             <div className='mr-3'>
               <ul className=' mx-auto flex gap-6 items-center text-white font-normal '>
-                <li className='text-white  text-lg'>
-                  <SignInOut />
-                </li>
-
                 <li className='text-lg text-white '>
                   <div className='flex'>
                     <Link
@@ -28,8 +26,18 @@ const Navbar = ({ sidemenu }) => {
                   </div>
                 </li>
 
-                <li className='text-white text-lg hover:text-gray-400 duration-500'>
-                  <Link href='/'>orders</Link>
+                <li className='text-white  text-lg'>
+                  {session?.user ? (
+                    <>
+                      <span className='mx-2'>Hello, {session?.user?.name}</span>
+                      <span className='mx-1'>|</span>
+                      <SignInOut />
+                    </>
+                  ) : (
+                    <>
+                      <Link href='/login'>Login</Link>
+                    </>
+                  )}
                 </li>
               </ul>
             </div>
