@@ -22,9 +22,9 @@ async function getFlashById(flash) {
 
 // create Regester
 
-async function createUser(user) {
-  return await userModel.create(user);
-}
+// async function createUser(user) {
+//   return await userModel.create(user);
+// }
 
 // create Login
 async function findUserByCredentials(credentials) {
@@ -36,4 +36,4 @@ async function findUserByCredentials(credentials) {
   return null;
 }
 
-export { getALLflashImage, getFlashById, createUser, findUserByCredentials };
+export { getALLflashImage, getFlashById, findUserByCredentials };
