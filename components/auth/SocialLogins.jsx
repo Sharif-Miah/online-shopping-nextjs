@@ -33,14 +33,6 @@ const SocialLogins = () => {
           <span>Google</span>
         </button>
       </div>
-      <span className='text-center text-xs text-gray-500'>
-        Dont have an account?
-        <Link
-          className='underline hover:text-[#1455ac]'
-          href='/register'>
-          Register
-        </Link>
-      </span>
     </div>
   );
 };
