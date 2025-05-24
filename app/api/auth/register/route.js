@@ -13,7 +13,7 @@ export const POST = async (request) => {
   const newUser = {
     name,
     email,
-    hashedPassword,
+    password: hashedPassword,
     phone,
     bio,
   };
@@ -25,6 +25,7 @@ export const POST = async (request) => {
       status: 201,
     });
   } catch (error) {
+    console.log('Error creating user:', error);
     return new NextResponse(error.message, {
       status: 500,
     });
