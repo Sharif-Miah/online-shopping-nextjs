@@ -6,15 +6,14 @@ import { MdOutlineLogout } from 'react-icons/md';
 const SignInOut = () => {
   return (
     <button
+      className=' justify-center items-center'
       title='Logout'
       onClick={() =>
         signOut({
           callbackUrl: 'http://localhost:3000/login',
         })
       }>
-      <div className=''>
-        <MdOutlineLogout className=' flex items-center' />
-      </div>
+      <MdOutlineLogout className=' text-xl ' />
     </button>
   );
 };

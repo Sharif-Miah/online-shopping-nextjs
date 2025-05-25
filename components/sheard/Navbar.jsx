@@ -15,23 +15,23 @@ const Navbar = async ({ sidemenu }) => {
           </Link>
           {sidemenu && (
             <div className='mr-3'>
-              <ul className=' mx-auto flex gap-6 items-center text-white font-normal '>
+              <ul className=' mx-auto flex gap-2 items-center text-white font-normal '>
                 <li className='text-lg text-white '>
                   <div className='flex'>
                     <Link
-                      href='/'
+                      href='/profile'
                       className=' text-white  py-2 px-4 rounded inline-flex items-center'>
-                      Order
+                      profile
                     </Link>
                   </div>
                 </li>
 
-                <li className='text-white  text-lg'>
+                <li className='flex justify-center items-center text-white  text-lg'>
                   {session?.user ? (
                     <>
-                      <span className='mx-2'>Hello, {session?.user?.name}</span>
+                      <span className='mx-1'>Hello, {session?.user?.name}</span>
                       <span className='mx-1'>|</span>
-                      <SignInOut />
+                      <SignInOut className='mx-2' />
                     </>
                   ) : (
                     <>

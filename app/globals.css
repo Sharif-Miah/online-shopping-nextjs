@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 @layer components {
-  
 
   .login-form {
     @apply flex flex-col my-6;
@@ -17,3 +16,5 @@
     @apply border border-black/20 rounded-md px-4 py-2 bg-white text-black;
   }
 }
+
+
