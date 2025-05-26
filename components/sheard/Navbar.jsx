@@ -19,9 +19,14 @@ const Navbar = async ({ sidemenu }) => {
                 <li className='text-lg text-white '>
                   <div className='flex'>
                     <Link
-                      href='/profile'
+                      href='/blog'
                       className=' text-white  py-2 px-4 rounded inline-flex items-center'>
-                      profile
+                      blog
+                    </Link>
+                    <Link
+                      href='/booking'
+                      className=' text-white  py-2 px-4 rounded inline-flex items-center'>
+                      booking
                     </Link>
                   </div>
                 </li>
@@ -29,7 +34,9 @@ const Navbar = async ({ sidemenu }) => {
                 <li className='flex justify-center items-center text-white  text-lg'>
                   {session?.user ? (
                     <>
-                      <span className='mx-1'>Hello, {session?.user?.name}</span>
+                      <Link href='/profile'>
+                        <span className='mx-1'>{session?.user?.name}</span>
+                      </Link>
                       <span className='mx-1'>|</span>
                       <SignInOut className='mx-2' />
                     </>
