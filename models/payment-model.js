@@ -1,4 +1,3 @@
-import { CardContent } from '@/components/ui/card';
 import mongoose, { Schema } from 'mongoose';
 
 const schema = new Schema({
@@ -14,13 +13,17 @@ const schema = new Schema({
     required: true,
     type: Number,
   },
+  price: {
+    required: true,
+    type: Number,
+  },
   date: {
     required: true,
     type: Number,
   },
   cvc: {
     required: true,
-    type: String,
+    type: Number,
   },
 });
 

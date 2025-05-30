@@ -17,6 +17,7 @@ const PaymentForm = ({ loggedInUser, productInfo }) => {
       const name = formData.get('name');
       const email = formData.get('email');
       const card = formData.get('card');
+      const price = formData.get('price');
       const date = formData.get('date');
       const cvc = formData.get('cvc');
 
@@ -29,6 +30,7 @@ const PaymentForm = ({ loggedInUser, productInfo }) => {
           name,
           email,
           card,
+          price,
           date,
           cvc,
         }),
@@ -80,11 +82,12 @@ const PaymentForm = ({ loggedInUser, productInfo }) => {
           </div>
 
           <div className='grid w-full max-w-sm items-center gap-1.5'>
-            <Label className=' font-thin mb-2'>Expird Date *</Label>
+            <Label className=' font-thin mb-2'>price *</Label>
             <Input
-              type='date'
-              id='date'
-              name='date'
+              type='number'
+              id='price'
+              name='price'
+              value={productInfo?.discount}
               className='border-2 border-gray-100 rounded py-5 mr-4'
             />
           </div>
@@ -101,12 +104,21 @@ const PaymentForm = ({ loggedInUser, productInfo }) => {
           </div>
 
           <div className='grid w-full max-w-sm items-center gap-1.5'>
-            <button
-              type='submit'
-              className=' px-8 py-3 font-bold mt-6 bg-[#1455ac] text-white rounded hover:bg-[#1455ac]'>
-              Submit
-            </button>
+            <Label className=' font-thin mb-2'>Expird Date *</Label>
+            <Input
+              type='date'
+              id='date'
+              name='date'
+              className='border-2 border-gray-100 rounded py-5 mr-4'
+            />
           </div>
+        </div>
+        <div className='flex flex-col w-2/3 mx-auto justify-center md:flex-row lg:flex-row gap-3 mt-6'>
+          <button
+            type='submit'
+            className='w-full mx-6 px-8 py-3 font-bold mt-6 bg-[#1455ac] text-white rounded hover:bg-[#1455ac]'>
+            Payment
+          </button>
         </div>
       </form>
     </>

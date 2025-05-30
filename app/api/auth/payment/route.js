@@ -4,7 +4,7 @@ import { _NextRequest, NextResponse } from 'next/server';
 import { paymentModel } from '@/models/payment-model';
 
 export const POST = async (request) => {
-  const { name, email, card, date, cvc } = await request.json();
+  const { name, email, card, price, date, cvc } = await request.json();
 
   await dbConnect();
 
@@ -12,6 +12,7 @@ export const POST = async (request) => {
     name,
     email,
     card,
+    price,
     date,
     cvc,
   };
