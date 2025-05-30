@@ -1,21 +1,27 @@
-import { Button } from '@/components/ui/button';
 import { Label } from '@/components/ui/label';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import Link from 'next/link';
-import { FaShoppingCart } from 'react-icons/fa';
-import { GoPackage } from 'react-icons/go';
-import { HiOutlineCreditCard } from 'react-icons/hi';
-import { IoIosArrowBack } from 'react-icons/io';
 import { MdOutlineKeyboardArrowLeft } from 'react-icons/md';
 import Image from 'next/image';
 import QuestionAnswer from '@/components/sheard/QuestionAnswer';
-
 import money from '@/public/money.png';
 import PaymentForm from '@/components/Payment/PaymentForm';
 import OnlinePayment from '@/components/Payment/OnlinePayment';
 import PaymentChairt from '@/components/Payment/PaymentChairt';
+import { auth } from '@/auth';
+import { redirect } from 'next/navigation';
+import { getFlashById, getUserByEmail } from '@/app/db/quries';
 
-const PaymentPage = () => {
+const PaymentPage = async ({ params: { id } }) => {
+  const session = await auth();
+
+  if (!session) {
+    redirect('/login');
+  }
+
+  const loggedInUser = await getUserByEmail(session?.user?.email);
+  const productInfo = await getFlashById(id);
+
   return (
     <section className='max-w-7xl mx-auto'>
       <div className='my-8'>
@@ -69,7 +75,10 @@ const PaymentPage = () => {
                     </div>
                   </div>
                   <div>
-                    <PaymentForm />
+                    <PaymentForm
+                      loggedInUser={loggedInUser}
+                      productInfo={productInfo}
+                    />
                   </div>
                 </div>
               </div>

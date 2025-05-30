@@ -15,16 +15,10 @@ async function getALLflashImage() {
 
 // create single flash deetails product
 
-async function getFlashById(flash) {
-  const singleProduct = await flashModel.findById(flash).lean();
+async function getFlashById(flashId) {
+  const singleProduct = await flashModel.findById(flashId).lean();
   return replaceMongoIdInObject(singleProduct);
 }
-
-// create Regester
-
-// async function createUser(user) {
-//   return await userModel.create(user);
-// }
 
 // create Login
 async function findUserByCredentials(credentials) {
@@ -36,4 +30,14 @@ async function findUserByCredentials(credentials) {
   return null;
 }
 
-export { getALLflashImage, getFlashById, findUserByCredentials };
+async function getUserByEmail(email) {
+  const user = await userModel.find({ email: email }).lean();
+  return replaceMongoIdInObject(user[0]);
+}
+
+export {
+  getALLflashImage,
+  getFlashById,
+  findUserByCredentials,
+  getUserByEmail,
+};
