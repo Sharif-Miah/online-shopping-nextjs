@@ -6,6 +6,7 @@ import {
 import { userModel } from '@/models/user-model';
 import { flashModel } from '@/models/flash-image-model';
 import { paymentModel } from '@/models/payment-model';
+import { featureModel, fetureModel } from '@/models/feture-model';
 
 // create All flash product
 
@@ -43,10 +44,18 @@ async function getAllBooking() {
   return replaceMongoIdInArray(allBookings);
 }
 
+// create Fature product
+
+async function getAllFetureProduct() {
+  const allFetureProduct = await featureModel.find().lean();
+  return replaceMongoIdInArray(allFetureProduct);
+}
+
 export {
   getALLflashImage,
   getFlashById,
   findUserByCredentials,
   getUserByEmail,
   getAllBooking,
+  getAllFetureProduct,
 };

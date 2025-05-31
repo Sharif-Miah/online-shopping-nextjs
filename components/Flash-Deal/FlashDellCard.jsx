@@ -1,6 +1,6 @@
 import { getALLflashImage } from '@/app/db/quries';
-import SheardTitle from '../SheardTitle';
-import ViewButton from '../ViewButton';
+import SheardTitle from '../sheard/SheardTitle';
+import ViewButton from '../sheard/ViewButton';
 import CardWithFlasDeal from './CardWithFlasDeal';
 
 const FlashDellCard = async () => {

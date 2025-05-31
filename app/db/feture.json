@@ -1,0 +1,132 @@
+[{
+    "_id": {
+      "$oid": "683b2b6583873b52187aa786"
+    },
+    "title": "Moisturizing Cream",
+    "details": "Hydrate and nourish your skin with this luxurious Moisturizing Cream, formulated to deliver long-lasting hydration and improve skin texture. Infused with natural ingredients, it provides deep moisture without clogging pores, leaving your skin feeling soft, smooth, and radiant. Suitable for daily use, it’s ideal for all skin types, including sensitive skin.",
+    "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1748706437/cream_avcrsf.webp",
+    "price": 25,
+    "rating": 4.5,
+    "percent": 5
+  },
+  {
+    "_id": {
+      "$oid": "683b2b6583873b52187aa787"
+    },
+    "title": "Beauty Facial Cleanser",
+    "details": "The Beauty Facial Cleanser offers a deep and gentle cleanse, removing dirt, oil, and makeup while nourishing your skin. Formulated with hydrating and soothing ingredients, it leaves your face feeling refreshed and revitalized without stripping away its natural moisture. Suitable for all skin types, this cleanser promotes a clear, glowing complexion and is ideal for daily use.",
+    "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1748706437/facewash_umdddt.webp",
+    "price": 12.12,
+    "rating": 4.5,
+    "percent": 5
+  },
+  {
+    "_id": {
+      "$oid": "683b2b6583873b52187aa788"
+    },
+    "title": "Tote Bag High Quality",
+    "details": "Elevate your style with our Tote Bag High Quality, crafted for durability and elegance. Made from premium materials, this versatile tote is perfect for daily use, offering ample space and a chic design. Whether you're heading to work, shopping, or a day out, this tote bag combines functionality with a touch of sophistication.",
+    "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1748706437/bag_iml33o.webp",
+    "price": 20,
+    "rating": 4.5,
+    "percent": 5
+  },
+  {
+    "_id": {
+      "$oid": "683b2b6583873b52187aa789"
+    },
+    "title": "Smart Watch Bluetooth",
+    "details": "Stay connected and track your fitness goals with the Smart Watch Bluetooth. This sleek and modern smartwatch pairs seamlessly with your smartphone, allowing you to receive notifications, monitor your health metrics, and control music right from your wrist. With features like heart rate monitoring, step counting, and sleep tracking, it’s the perfect companion for anyone looking to maintain a healthy, active lifestyle while staying hands-free.",
+    "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1747534122/smart-watch_cnsmke.webp",
+    "price": 200,
+    "rating": 4.5,
+    "percent": 5
+  },
+  {
+    "_id": {
+      "$oid": "683b2b6583873b52187aa78a"
+    },
+    "title": "Samsung S24 Ultra",
+    "details": "The Samsung S24 Ultra redefines flagship smartphone technology with its stunning design and powerhouse performance. Featuring a massive 6.8-inch Dynamic AMOLED 2X display with a 120Hz refresh rate, the S24 Ultra offers an immersive visual experience. Powered by the latest Snapdragon 8 Gen 3 processor and equipped with a professional-grade 200MP camera system, this phone is designed for capturing breathtaking photos and videos in any condition. With a long-lasting battery and 5G connectivity, the Samsung S24 Ultra keeps you connected and productive all day.",
+    "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1747534378/samsung_l3fncf.webp",
+    "price": 1500,
+    "rating": 4.5,
+    "percent": 5
+  },
+  {
+    "_id": {
+      "$oid": "683b2b6583873b52187aa78b"
+    },
+    "title": "Honor X14 Plus Laptop",
+    "details": "The Honor X14 Plus Laptop is a powerful and lightweight device designed for professionals and students alike. Featuring a stunning 14-inch Full HD display and powered by the latest Intel processor, it delivers fast performance for multitasking, streaming, and productivity. With a sleek aluminum build and long battery life, the X14 Plus is perfect for those on the go who need reliability and style in one package.",
+    "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1747534540/laptop_cqmmsu.webp",
+    "price": 2500,
+    "rating": 4.5,
+    "percent": 5
+  },
+  {
+    "_id": {
+      "$oid": "683b2b6583873b52187aa78c"
+    },
+    "title": "Moisturizing Cream",
+    "details": "Experience the ultimate in skin hydration with our Moisturizing Cream. Formulated with a blend of natural ingredients, this rich cream nourishes and revitalizes your skin, leaving it soft, supple, and radiant. Perfect for daily use, it delivers long-lasting moisture without feeling greasy, making it ideal for all skin types.",
+    "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1748706438/moisturizatin_pj1jl4.webp",
+    "price": 14,
+    "rating": 4.5,
+    "percent": 5
+  },
+  {
+    "_id": {
+      "$oid": "683b2b6583873b52187aa78d"
+    },
+    "title": "Women Smart Watch",
+    "details": "Stay stylish and connected with the Women Smart Watch, designed for the modern woman. This sleek smartwatch combines functionality and elegance, featuring a vibrant touchscreen display that offers a variety of customizable watch faces. Track your fitness goals, receive notifications, and monitor your health with ease. Perfect for everyday wear or special occasions, this smartwatch is a must-have accessory.",
+    "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1748706446/woman-watch_ycma2d.webp",
+    "price": 210,
+    "rating": 4.5,
+    "percent": 5
+  },
+  {
+    "_id": {
+      "$oid": "683b2b6583873b52187aa78e"
+    },
+    "title": "Electric Table Blender",
+    "details": "Blend with ease using the Electric Table Blender, your kitchen’s go-to appliance for smoothies, soups, sauces, and more. Equipped with a powerful motor and durable stainless steel blades, this blender can handle everything from crushing ice to pureeing fruits and vegetables. With multiple speed settings and a sleek, compact design, it’s perfect for everyday use in any kitchen.",
+    "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1748706437/blendure_tkmf1p.webp",
+    "price": 250,
+    "rating": 4.5,
+    "percent": 5
+  },
+  {
+    "_id": {
+      "$oid": "683b2b6583873b52187aa78f"
+    },
+    "title": "2020 MacBook Air M1",
+    "details": "The 2020 MacBook Air M1 revolutionizes performance with Apple’s powerful M1 chip, providing lightning-fast speeds and incredible efficiency in a sleek, fanless design. Featuring a 13.3-inch Retina display, this ultra-portable laptop delivers stunning visuals, sharp text, and vibrant colors. With up to 18 hours of battery life, it's perfect for work, play, or anything in between. Whether multitasking, editing photos, or streaming media, the MacBook Air M1 ensures smooth and responsive performance.",
+    "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1748706438/mac-book_fv4pvo.webp",
+    "price": 1158,
+    "rating": 4.5,
+    "percent": 5
+  },
+  {
+    "_id": {
+      "$oid": "683b2b6583873b52187aa790"
+    },
+    "title": "Fireplaces Cook Stoves",
+    "details": "Experience the warmth and charm of traditional cooking with these Fireplaces Cook Stoves. Built for both functionality and aesthetics, these stoves offer the perfect combination of heating and cooking capabilities. Ideal for rustic kitchens, cabins, or as a backup heat source, they bring the cozy ambiance of a fireplace along with the practicality of a cook stove. Crafted from durable materials, they are designed to last and provide efficient heating.",
+    "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1748706438/mac-book_fv4pvo.webp",
+    "price": 1200,
+    "rating": 4.5,
+    "percent": 5
+  },
+  {
+    "_id": {
+      "$oid": "683b2b6583873b52187aa791"
+    },
+    "title": "Men's Casual Shoes",
+    "details": "Step into comfort and style with these Women's Casual Shoes, perfect for everyday wear. Designed with a lightweight structure and breathable material, they keep your feet cool and comfortable all day long. The versatile design pairs effortlessly with jeans, dresses, or skirts, making them a wardrobe essential.",
+    "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1748706438/mac-book_fv4pvo.webp",
+    "price": 450,
+    "rating": 4.5,
+    "percent": 5
+  }]
