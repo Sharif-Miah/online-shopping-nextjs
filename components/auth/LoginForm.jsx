@@ -3,10 +3,13 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { login } from '@/app/actions/userAction';
+import { toast } from 'react-toastify';
 
 const LoginForm = () => {
   const [error, setError] = useState('');
   const router = useRouter();
+
+  const succcess = () => toast.success('Successfully Login !');
 
   async function onSubmit(event) {
     event.preventDefault();
@@ -19,6 +22,7 @@ const LoginForm = () => {
         setError(response.error);
       } else {
         router.push('/');
+        succcess();
       }
     } catch (err) {
       setError(err.message);

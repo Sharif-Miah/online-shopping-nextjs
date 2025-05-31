@@ -4,10 +4,12 @@ import { Label } from '../ui/label';
 import { Input } from '../ui/input';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
+import { toast } from 'react-toastify';
 
 const PaymentForm = ({ loggedInUser, productInfo }) => {
   const [error, setError] = useState('');
   const router = useRouter();
+  const succcess = () => toast.success('Successfully Payment !');
 
   async function onSubmit(event) {
     event.preventDefault();
@@ -38,6 +40,7 @@ const PaymentForm = ({ loggedInUser, productInfo }) => {
       });
 
       res.status === 201 && router.push('/booking');
+      succcess();
     } catch (error) {
       setError(error.message);
     }

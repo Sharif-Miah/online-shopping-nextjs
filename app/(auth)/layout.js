@@ -3,7 +3,7 @@ import '../globals.css';
 import Navbar from '@/components/sheard/Navbar';
 import Footer from '@/components/sheard/Footer';
 import { dbConnect } from '@/services/mongo';
-import AuthProvider from '../provider/AuthProvider';
+import { ToastContainer } from 'react-toastify';
 
 export const metadata = {
   title: 'Online Shopping',
@@ -16,14 +16,12 @@ export default async function RootLayout({ children }) {
   return (
     <html lang='en'>
       <body className={` antialiased`}>
-        <AuthProvider>
-          <div>
-            <Navbar sidemenu={false} />
-            {children}
-            <Footer />
-            <div id='modal-root-content'> </div>
-          </div>
-        </AuthProvider>
+        <div>
+          <Navbar sidemenu={false} />
+          {children}
+          <Footer />
+          <ToastContainer />
+        </div>
       </body>
     </html>
   );

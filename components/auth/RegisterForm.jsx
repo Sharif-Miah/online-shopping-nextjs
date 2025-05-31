@@ -2,10 +2,13 @@
 
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
+import { toast } from 'react-toastify';
 
 const RegisterForm = () => {
   const [error, setError] = useState('');
   const router = useRouter();
+
+  const succcess = () => toast.success('Successfully Register !');
 
   async function onSubmit(event) {
     event.preventDefault();
@@ -33,6 +36,7 @@ const RegisterForm = () => {
         }),
       });
       res.status === 201 && router.push('/login');
+      succcess();
     } catch (error) {
       setError(error.message);
     }

@@ -1,16 +1,17 @@
 import { auth } from '@/auth';
 import { redirect } from 'next/navigation';
-import man from '@/public/man.png';
-import offer from '@/public/offer.svg';
-import { Button } from '@/components/ui/button';
-import { Checkbox } from '@/components/ui/checkbox';
-
-import { IoIosArrowBack } from 'react-icons/io';
-import Image from 'next/image';
-import Link from 'next/link';
-import QuestionAnswer from '@/components/sheard/QuestionAnswer';
 import { getAllBooking } from '@/app/db/quries';
 import BookingCard from '@/components/Booking/BookingCard';
+import {
+  Table,
+  TableBody,
+  TableCaption,
+  TableCell,
+  TableFooter,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from '@/components/ui/table';
 
 const BookingPage = async () => {
   const session = await auth();
@@ -25,16 +26,27 @@ const BookingPage = async () => {
     <section className='max-w-7xl mx-auto my-10'>
       <h2 className='text-xl font-bold my-10'>🕛️ My Bookings</h2>
 
-      <div className='space-y-4'>
-        <div className='grid grid-cols-1 lg:grid-cols-2 gap-8'>
-          {bookings.map((booking) => (
+      <Table>
+        <TableHeader>
+          <TableRow>
+            <TableHead>No.</TableHead>
+            <TableHead>Name</TableHead>
+            <TableHead>Email</TableHead>
+            <TableHead>Status</TableHead>
+            <TableHead>Price</TableHead>
+            <TableHead className='text-right pr-10'>Action</TableHead>
+          </TableRow>
+        </TableHeader>
+        <TableBody>
+          {bookings.map((booking, index) => (
             <BookingCard
               key={booking.id}
               booking={booking}
+              index={index}
             />
           ))}
-        </div>
-      </div>
+        </TableBody>
+      </Table>
     </section>
   );
 };

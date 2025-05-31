@@ -1,24 +1,26 @@
-import Image from 'next/image';
+import { TableCell, TableRow } from '@/components/ui/table';
+import Link from 'next/link';
+import { FaRegEye } from 'react-icons/fa';
+import { GoDotFill } from 'react-icons/go';
 
-const BookingCard = ({ booking }) => {
+const BookingCard = ({ booking, index }) => {
   return (
-    <div className='bg-[#ebf6e9] p-4 rounded-md'>
-      <div className='flex justify-between items-center '>
-        <div className='flex flex-col'>
-          <h3 className='text-xl font-semibold'>{booking.name}</h3>
-          <p className='text-sm text-gray-600 my-1'>{booking.email}</p>
+    <TableRow>
+      <TableCell className='font-medium'>{index + 1}</TableCell>
+      <TableCell>{booking.name}</TableCell>
+      <TableCell>{booking.email}</TableCell>
+      <TableCell className='text-green-600 flex gap-1  items-center'>
+        <GoDotFill />
+        Paid
+      </TableCell>
+      <TableCell className=''>{booking.price}</TableCell>
+      <TableCell className='text-right'>
+        <div className='flex gap-3 justify-end'>
+          <FaRegEye className='mt-1 cursor-pointer hover:text-[#184261] text-md' />
+          <Link href='#'>Download</Link>
         </div>
-        <div>
-          <div className='text-sm text-gray-600 my-4'>
-            <p>Booking Date: {booking.date}</p>
-          </div>
-        </div>
-
-        <div>
-          <h3 className='text-xl font-semibold text-right'>${booking.price}</h3>
-        </div>
-      </div>
-    </div>
+      </TableCell>
+    </TableRow>
   );
 };
 
