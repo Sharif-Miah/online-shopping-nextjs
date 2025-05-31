@@ -5,6 +5,7 @@ import {
 
 import { userModel } from '@/models/user-model';
 import { flashModel } from '@/models/flash-image-model';
+import { paymentModel } from '@/models/payment-model';
 
 // create All flash product
 
@@ -35,9 +36,17 @@ async function getUserByEmail(email) {
   return replaceMongoIdInObject(user[0]);
 }
 
+// Booking Data
+
+async function getAllBooking() {
+  const allBookings = await paymentModel.find().lean();
+  return replaceMongoIdInArray(allBookings);
+}
+
 export {
   getALLflashImage,
   getFlashById,
   findUserByCredentials,
   getUserByEmail,
+  getAllBooking,
 };

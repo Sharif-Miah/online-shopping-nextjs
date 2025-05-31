@@ -106,7 +106,7 @@ const PaymentForm = ({ loggedInUser, productInfo }) => {
           </div>
 
           <div className='grid w-full max-w-sm items-center gap-1.5'>
-            <Label className=' font-thin mb-2'>Expird Date *</Label>
+            <Label className=' font-thin mb-2'>Order Date *</Label>
             <Input
               type='date'
               id='date'

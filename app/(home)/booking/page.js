@@ -9,6 +9,8 @@ import { IoIosArrowBack } from 'react-icons/io';
 import Image from 'next/image';
 import Link from 'next/link';
 import QuestionAnswer from '@/components/sheard/QuestionAnswer';
+import { getAllBooking } from '@/app/db/quries';
+import BookingCard from '@/components/Booking/BookingCard';
 
 const BookingPage = async () => {
   const session = await auth();
@@ -17,28 +19,20 @@ const BookingPage = async () => {
     redirect('/login');
   }
 
+  const bookings = await getAllBooking();
+
   return (
-    <section className='max-w-7xl mx-auto'>
-      <div className='grid grid-cols-1 lg:grid-cols-2 gap-8'>
-        <div className='space-y-4'>
-          <h2 className='text-xl font-bold'>🕛️ Bookings</h2>
+    <section className='max-w-7xl mx-auto my-10'>
+      <h2 className='text-xl font-bold my-10'>🕛️ My Bookings</h2>
 
-          <div className='bg-[#ebf6e9] p-4 rounded-md'>
-            <div className='flex justify-between items-center '>
-              <div>
-                <h3 className='text-xl font-semibold'>shahet</h3>
-                <div className='text-sm text-gray-600 my-4'>
-                  <p>Check In: 12/12/2021</p>
-                  <p>Check Out: 14/12/2021</p>
-                </div>
-              </div>
-
-              <div>
-                <h3 className='text-xl font-semibold text-right'>$124</h3>
-                <p className='text-sm text-gray-600'>$62 per night x 2 days</p>
-              </div>
-            </div>
-          </div>
+      <div className='space-y-4'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-8'>
+          {bookings.map((booking) => (
+            <BookingCard
+              key={booking.id}
+              booking={booking}
+            />
+          ))}
         </div>
       </div>
     </section>
