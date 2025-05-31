@@ -11,19 +11,19 @@ const schema = new Schema({
   },
   card: {
     required: true,
-    type: Number,
+    type: String,
   },
   price: {
     required: true,
-    type: Number,
+    type: String,
   },
   date: {
     required: true,
-    type: Number,
+    type: String,
   },
   cvc: {
     required: true,
-    type: Number,
+    type: String,
   },
 });
 

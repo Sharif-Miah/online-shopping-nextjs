@@ -14,12 +14,13 @@ const PaymentForm = ({ loggedInUser, productInfo }) => {
 
     try {
       const formData = new FormData(event.currentTarget);
+
       const name = formData.get('name');
       const email = formData.get('email');
       const card = formData.get('card');
       const price = formData.get('price');
-      const date = formData.get('date');
       const cvc = formData.get('cvc');
+      const date = formData.get('date');
 
       const res = await fetch('/api/auth/payment', {
         method: 'POST',
@@ -31,10 +32,11 @@ const PaymentForm = ({ loggedInUser, productInfo }) => {
           email,
           card,
           price,
-          date,
           cvc,
+          date,
         }),
       });
+
       res.status === 201 && router.push('/booking');
     } catch (error) {
       setError(error.message);
