@@ -1,4 +1,4 @@
-import FeaturedCardItem from './FeaturedCardItem/FeaturedCardItem';
+import FeaturedCardItem from './Featured/FeaturedCardItem/FeaturedCardItem';
 
 const SimilarProduct = () => {
   return (

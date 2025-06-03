@@ -1,12 +1,11 @@
+import { getALLfeatureImage, getAllfetureProduct } from '@/app/db/quries';
 import SheardTitle from '../sheard/SheardTitle';
 import ViewButton from '../sheard/ViewButton';
 import FeatureCarosel from './FeatureCarosel';
-import { getAllFetureProduct } from '@/app/db/quries';
 
 const FeatureProduct = async () => {
-  const feturesProducts = await getAllFetureProduct();
-
-  console.log(feturesProducts);
+  const feture = await getALLfeatureImage();
+  console.log(feture);
 
   return (
     <section className='mt-6 py-6'>

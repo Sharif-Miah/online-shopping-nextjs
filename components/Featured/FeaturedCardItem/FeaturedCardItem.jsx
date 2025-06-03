@@ -1,7 +1,8 @@
 import React from 'react';
-import { Card, CardContent } from '../ui/card';
+import { Card, CardContent } from '../../ui/card';
 import Image from 'next/image';
-import PriceItemComponent from '../sheard/PriceItemComponent';
+import PriceItemComponent from '../../sheard/PriceItemComponent';
+import { getALLfeatureImage } from '@/app/db/quries';
 
 const FeaturedCardItem = () => {
   return (

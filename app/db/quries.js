@@ -6,13 +6,18 @@ import {
 import { userModel } from '@/models/user-model';
 import { flashModel } from '@/models/flash-image-model';
 import { paymentModel } from '@/models/payment-model';
-import { featureModel, fetureModel } from '@/models/feture-model';
+import { featureModel } from '@/models/feture-model';
 
 // create All flash product
 
 async function getALLflashImage() {
   const allFlashImages = await flashModel.find().lean();
   return replaceMongoIdInArray(allFlashImages);
+}
+async function getALLfeatureImage() {
+  const allFeatureImages = await featureModel.find();
+  console.log(allFeatureImages);
+  return replaceMongoIdInArray(allFeatureImages);
 }
 
 // create single flash deetails product
@@ -46,16 +51,11 @@ async function getAllBooking() {
 
 // create Fature product
 
-async function getAllFetureProduct() {
-  const allFetureProduct = await featureModel.find().lean();
-  return replaceMongoIdInArray(allFetureProduct);
-}
-
 export {
   getALLflashImage,
+  getALLfeatureImage,
   getFlashById,
   findUserByCredentials,
   getUserByEmail,
   getAllBooking,
-  getAllFetureProduct,
 };
