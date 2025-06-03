@@ -1,10 +1,12 @@
 import { getALLflashImage } from '@/app/db/quries';
-import SheardTitle from '../SheardTitle';
-import ViewButton from '../ViewButton';
+import SheardTitle from '../sheard/SheardTitle';
+import ViewButton from '../sheard/ViewButton';
 import CardWithFlasDeal from './CardWithFlasDeal';
 
 const FlashDellCard = async () => {
   const allFlashPhotos = await getALLflashImage();
+
+  // console.log(allFlashPhotos);
 
   return (
     <section className=' bg-gradient-to-r from-[#f0f4fe] to-[#edecfe] py-6 px-6 rounded mt-6'>

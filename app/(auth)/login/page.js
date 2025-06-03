@@ -1,7 +1,5 @@
-import LoginDetails from '@/components/auth/LoginDetails';
 import LoginForm from '@/components/auth/LoginForm';
 import SocialLogins from '@/components/auth/SocialLogins';
-import Link from 'next/link';
 
 export const metadata = {
   title: 'Online Shopping | Login',

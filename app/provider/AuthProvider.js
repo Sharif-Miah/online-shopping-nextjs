@@ -1,14 +1,14 @@
-'use client';
+// 'use client';
 
-import { useState } from 'react';
-import { AuthContext } from '../context';
+// import { useState } from 'react';
+// import { AuthContext } from '../context';
 
-export default function AuthProvider({ children }) {
-  const [auth, setAuth] = useState(null);
+// export default function AuthProvider({ children }) {
+//   const [auth, setAuth] = useState(null);
 
-  return (
-    <AuthContext.Provider value={{ auth, setAuth }}>
-      {children}
-    </AuthContext.Provider>
-  );
-}
+//   return (
+//     <AuthContext.Provider value={{ auth, setAuth }}>
+//       {children}
+//     </AuthContext.Provider>
+//   );
+// }

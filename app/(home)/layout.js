@@ -16,14 +16,12 @@ export default async function RootLayout({ children }) {
   return (
     <html lang='en'>
       <body className={`antialiased`}>
-        <AuthProvider>
-          <div>
-            <Navbar sidemenu={true} />
-            {children}
-            <Footer />
-            <div id='modal-root-content'> </div>
-          </div>
-        </AuthProvider>
+        <div>
+          <Navbar sidemenu={true} />
+          {children}
+          <Footer />
+          <div id='modal-root-content'> </div>
+        </div>
       </body>
     </html>
   );

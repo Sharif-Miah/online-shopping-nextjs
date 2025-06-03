@@ -5,6 +5,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const SocialLogins = ({ mode }) => {
+  const succcess = () => toast.success('Successfully Register with google !');
+
   const handleAuth = (event) => {
     signIn('google', { callbackUrl: 'http://localhost:3000/' });
   };
