@@ -22,8 +22,10 @@ const FeatureCarosel = async () => {
                 <CardContent className='flex aspect-square items-center justify-center p-6 '>
                   <div>
                     <Image
-                      src=''
+                      src='https://res.cloudinary.com/dnuxd0pd0/image/upload/v1748706437/facewash_umdddt.webp'
                       alt=''
+                      width={100}
+                      height={100}
                     />
                     <h4 className='font-medium hover:text-[#f58300] cursor-pointer'>
                       TWS Ear Buds
