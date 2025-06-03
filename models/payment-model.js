@@ -19,7 +19,7 @@ const schema = new Schema({
   },
   date: {
     required: true,
-    type: Number,
+    type: String,
   },
   cvc: {
     required: true,
