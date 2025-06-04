@@ -1,11 +1,12 @@
-import { getFlashById } from '@/app/db/quries';
+import { getFeatureById, getFlashById } from '@/app/db/quries';
 import DeleveryQA from '@/components/DeleveryQA';
 import ProductCalculate from '@/components/ProductCalculate';
 import QuestionAnswer from '@/components/sheard/QuestionAnswer';
 import Image from 'next/image';
 
-const FlashDetailsPage = async ({ params: { id } }) => {
-  const flashProduct = await getFlashById(id);
+const FeatureDetailsPage = async ({ params: { id } }) => {
+  const feature = await getFeatureById(id);
+  console.log(feature);
   return (
     <section className='max-w-7xl mx-auto'>
       <div className='my-8'>
@@ -13,7 +14,7 @@ const FlashDetailsPage = async ({ params: { id } }) => {
           <div className='flex-shrink-0 w-full md:w-1/3 '>
             {/* Single Image Carosel  */}
             <Image
-              src={flashProduct.imageUrl}
+              src={feature.imageUrl}
               alt=''
               width={500}
               height={400}
@@ -23,7 +24,7 @@ const FlashDetailsPage = async ({ params: { id } }) => {
           <div className='flex-grow w-full md:w-2/3  ml-5'>
             <div className='flex flex-col md:flex-row gap-2'>
               {/* Middle Column  */}
-              <ProductCalculate product={flashProduct} />
+              <ProductCalculate product={feature} />
               {/* Last column  */}
               <div className='flex-shrink-0 w-full md:w-1/3 '>
                 <DeleveryQA />
@@ -33,7 +34,7 @@ const FlashDetailsPage = async ({ params: { id } }) => {
           </div>
         </div>
         <p className='w-2/3 sm:mx-auto lg:ml-24 text-md leading-6'>
-          {flashProduct.details}
+          {feature.details}
         </p>
         <QuestionAnswer />
       </div>
@@ -41,4 +42,4 @@ const FlashDetailsPage = async ({ params: { id } }) => {
   );
 };
 
-export default FlashDetailsPage;
+export default FeatureDetailsPage;

@@ -10,9 +10,9 @@ export const POST = async (request) => {
   const payload = {
     name,
     email,
-    card,
-    price,
-    cvc,
+    card: Number(card),
+    price: Number(price),
+    cvc: Number(cvc),
     date,
   };
 

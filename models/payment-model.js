@@ -17,13 +17,13 @@ const schema = new Schema({
     required: true,
     type: Number,
   },
-  date: {
-    required: true,
-    type: Number,
-  },
   cvc: {
     required: true,
     type: Number,
+  },
+  date: {
+    required: true,
+    type: String,
   },
 });
 

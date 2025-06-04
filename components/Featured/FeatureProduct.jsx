@@ -4,8 +4,7 @@ import ViewButton from '../sheard/ViewButton';
 import FeatureCarosel from './FeatureCarosel';
 
 const FeatureProduct = async () => {
-  const feture = await getALLfeatureImage();
-  console.log(feture);
+  const fetures = await getALLfeatureImage();
 
   return (
     <section className='mt-6 py-6'>
@@ -13,7 +12,7 @@ const FeatureProduct = async () => {
         <SheardTitle title='Feature Product' />
         <ViewButton />
         <div className='mt-6'>
-          <FeatureCarosel />
+          <FeatureCarosel fetures={fetures} />
         </div>
       </div>
     </section>

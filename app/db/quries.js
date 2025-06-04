@@ -8,24 +8,32 @@ import { flashModel } from '@/models/flash-image-model';
 import { paymentModel } from '@/models/payment-model';
 import { featureModel } from '@/models/feture-model';
 
-// create All flash product
+// ---------------------- create All flash product start -------------------------
 
 async function getALLflashImage() {
   const allFlashImages = await flashModel.find().lean();
   return replaceMongoIdInArray(allFlashImages);
 }
-async function getALLfeatureImage() {
-  const allFeatureImages = await featureModel.find();
-  console.log(allFeatureImages);
-  return replaceMongoIdInArray(allFeatureImages);
-}
-
-// create single flash deetails product
 
 async function getFlashById(flashId) {
   const singleProduct = await flashModel.findById(flashId).lean();
   return replaceMongoIdInObject(singleProduct);
 }
+// ---------------------- create All flash product end -------------------------
+
+// ------------------- create feture product start ---------------------
+
+async function getALLfeatureImage() {
+  const allFeatureImages = await featureModel.find().lean();
+  return replaceMongoIdInArray(allFeatureImages);
+}
+
+async function getFeatureById(featureId) {
+  const featureProduct = await featureModel.findById(featureId).lean();
+  return replaceMongoIdInObject(featureProduct);
+}
+
+// ------------------- create feture product end ---------------------
 
 // create Login
 async function findUserByCredentials(credentials) {
@@ -53,8 +61,9 @@ async function getAllBooking() {
 
 export {
   getALLflashImage,
-  getALLfeatureImage,
   getFlashById,
+  getALLfeatureImage,
+  getFeatureById,
   findUserByCredentials,
   getUserByEmail,
   getAllBooking,

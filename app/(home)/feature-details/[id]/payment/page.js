@@ -10,7 +10,7 @@ import OnlinePayment from '@/components/Payment/OnlinePayment';
 import PaymentChairt from '@/components/Payment/PaymentChairt';
 import { auth } from '@/auth';
 import { redirect } from 'next/navigation';
-import { getFlashById, getUserByEmail } from '@/app/db/quries';
+import { getFeatureById, getUserByEmail } from '@/app/db/quries';
 
 const PaymentPage = async ({ params: { id } }) => {
   const session = await auth();
@@ -20,7 +20,7 @@ const PaymentPage = async ({ params: { id } }) => {
   }
 
   const loggedInUser = await getUserByEmail(session?.user?.email);
-  const productInfo = await getFlashById(id);
+  const productInfo = await getFeatureById(id);
 
   return (
     <section className='max-w-7xl mx-auto'>
@@ -77,7 +77,7 @@ const PaymentPage = async ({ params: { id } }) => {
                   <div>
                     <PaymentForm
                       loggedInUser={loggedInUser}
-                      price={productInfo.discount}
+                      price={productInfo.price}
                     />
                   </div>
                 </div>

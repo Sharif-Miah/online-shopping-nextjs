@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import { toast } from 'react-toastify';
 
-const PaymentForm = ({ loggedInUser, productInfo }) => {
+const PaymentForm = ({ loggedInUser, price }) => {
   const [error, setError] = useState('');
   const router = useRouter();
   const succcess = () => toast.success('Successfully Payment !');
@@ -92,7 +92,7 @@ const PaymentForm = ({ loggedInUser, productInfo }) => {
               type='number'
               id='price'
               name='price'
-              value={productInfo?.discount}
+              value={price}
               className='border-2 border-gray-100 rounded py-5 mr-4'
             />
           </div>
