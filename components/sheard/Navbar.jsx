@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import { auth } from '@/auth';
 import SignInOut from '../auth/SignInOut';
+import { FaUser } from 'react-icons/fa';
+import LoginRegisterPopUP from '../auth/LoginRegisterPopUP';
 
 const Navbar = async ({ sidemenu }) => {
   const session = await auth();
@@ -42,7 +44,7 @@ const Navbar = async ({ sidemenu }) => {
                     </>
                   ) : (
                     <>
-                      <Link href='/login'>Login</Link>
+                      <LoginRegisterPopUP />
                     </>
                   )}
                 </li>
