@@ -6,6 +6,7 @@ import Image from 'next/image';
 
 const FlashDetailsPage = async ({ params: { id } }) => {
   const flashProduct = await getFlashById(id);
+
   return (
     <section className='max-w-7xl mx-auto'>
       <div className='my-8'>

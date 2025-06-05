@@ -6,7 +6,6 @@ import Image from 'next/image';
 
 const FeatureDetailsPage = async ({ params: { id } }) => {
   const feature = await getFeatureById(id);
-  console.log(feature);
   return (
     <section className='max-w-7xl mx-auto'>
       <div className='my-8'>

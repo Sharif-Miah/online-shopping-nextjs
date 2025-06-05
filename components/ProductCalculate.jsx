@@ -2,12 +2,11 @@ import Link from 'next/link';
 import { FaHeart, FaStar } from 'react-icons/fa';
 
 const ProductCalculate = ({ product }) => {
+  console.log(product.id);
   return (
     <div className='flex-grow w-full md:w-2/3 '>
       <div>
-        <h2 className='text-xl font-bold mt-6'>
-          Exclusive & Fashionable Suit For Men
-        </h2>
+        <h2 className='text-xl font-bold mt-6'>{product.title}</h2>
         <div className='flex'>
           <div className='flex gap-[6px]  text-[#ff7d1e] my-2 text-md '>
             <FaStar />
@@ -37,9 +36,8 @@ const ProductCalculate = ({ product }) => {
           </div>
         </div>
         <div className='flex gap-1'>
-          <p className='text-xl text-[#1455ac] mt-1 font-bold'>$450.00</p>
-          <p className='text-[16px] mt-3 font-bold line-through text-gray-400'>
-            $500.00
+          <p className='text-xl text-[#1455ac] mt-1 font-bold'>
+            ${product.price}
           </p>
         </div>
         <div className='flex mt-3'>
@@ -79,12 +77,14 @@ const ProductCalculate = ({ product }) => {
         <div className='flex mt-2'>
           <h4 className='text-md font-semibold mt-2'>Total Price:</h4>
           <div className='ml-4 mt-2 py-0 '>
-            <span className=' text-lg font-bold text-[#1455ac]'>$475.00</span>
+            <span className=' text-lg font-bold text-[#1455ac]'>
+              ${product.price}
+            </span>
           </div>
         </div>
 
         <div className='mt-5 flex'>
-          <Link href={`/feature-details/${product.id}/payment`}>
+          <Link href={`/flash-details/${product.id}/payment`}>
             <button className='bg-[#dd7f13] hover:bg-[#c47112] text-white font-normal text-md  py-2 mt-0  ml-2 border-black px-5  rounded'>
               Buy Now
             </button>
