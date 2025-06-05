@@ -17,6 +17,13 @@ const schema = new Schema({
     required: true,
     type: Number,
   },
+<<<<<<< HEAD
+=======
+  date: {
+    required: true,
+    type: String,
+  },
+>>>>>>> 83992ed20db1ba2f56892aa766e4855ba24da8d5
   cvc: {
     required: true,
     type: Number,
