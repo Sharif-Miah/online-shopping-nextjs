@@ -1,37 +1,45 @@
-'use client';
-
-import slider1 from '@/public/bannerimg.webp';
-import slider2 from '@/public/slider2.jpg';
-import slider3 from '@/public/slider3.jpg';
+import banner1 from '@/public/banner-img/banner-1.webp';
+import banner2 from '@/public/banner-img/banner-2.webp';
+import banner3 from '@/public/banner-img/banner-3.webp';
+import banner4 from '@/public/banner-img/banner-4.jpg';
+import banner5 from '@/public/banner-img/banner-5.jpg';
 import { Card, CardContent } from '@/components/ui/card';
-// import Autoplay from 'embla-carousel-autoplay';
+
 import {
-  Carousel,
   CarouselContent,
-  CarouselItem,
   CarouselNext,
+  CarouselItem,
   CarouselPrevious,
 } from '@/components/ui/carousel';
 import Image from 'next/image';
+import AutoPlayCarosel from '../Featured/Carousel';
 
 const Slider = () => {
   const sliders = [
     {
       id: 1,
-      img: slider1,
+      img: banner1,
     },
     {
       id: 2,
-      img: slider2,
+      img: banner2,
     },
     {
       id: 3,
-      img: slider3,
+      img: banner3,
+    },
+    {
+      id: 4,
+      img: banner4,
+    },
+    {
+      id: 5,
+      img: banner5,
     },
   ];
 
   return (
-    <Carousel className='w-full  max-w-6xl min-h-8 mx-auto '>
+    <AutoPlayCarosel>
       <CarouselContent className='-ml-1'>
         {sliders.map((sli) => (
           <CarouselItem
@@ -55,7 +63,7 @@ const Slider = () => {
       </CarouselContent>
       <CarouselPrevious />
       <CarouselNext />
-    </Carousel>
+    </AutoPlayCarosel>
   );
 };
 

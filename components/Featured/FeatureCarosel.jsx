@@ -1,19 +1,20 @@
+'use client';
+
 import {
   Carousel,
   CarouselContent,
-  CarouselItem,
   CarouselNext,
   CarouselPrevious,
 } from '@/components/ui/carousel';
-import { Card, CardContent } from '../ui/card';
-import Image from 'next/image';
-import PriceItemComponent from '../sheard/PriceItemComponent';
+
 import CaroseContent from './FeaturedCardItem/CaroseContent';
 import Link from 'next/link';
 
-const FeatureCarosel = async ({ fetures }) => {
+import AutoPlayCarosel from './Carousel';
+
+const FeatureCarosel = ({ fetures }) => {
   return (
-    <Carousel className='w-full  max-w-6xl min-h-8 mx-auto'>
+    <AutoPlayCarosel>
       <CarouselContent className='-ml-1'>
         {fetures.map((feture) => (
           <Link
@@ -25,7 +26,7 @@ const FeatureCarosel = async ({ fetures }) => {
       </CarouselContent>
       <CarouselPrevious />
       <CarouselNext />
-    </Carousel>
+    </AutoPlayCarosel>
   );
 };
 
