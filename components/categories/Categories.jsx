@@ -1,7 +1,10 @@
+import { getAllCategories } from '@/app/db/quries';
 import ViewButton from '../sheard/ViewButton';
 import CategoriesItem from './CategoriesItem';
 
-const Categories = () => {
+const Categories = async () => {
+  const categories = await getAllCategories();
+
   return (
     <section className='my-6 bg-white pt-4 pb-32 mx-auto'>
       <div className='py-6'>
@@ -12,8 +15,13 @@ const Categories = () => {
         <div className='mb-5'>
           <ViewButton />
         </div>
-        <div className='grid gap-2 grid-cols-1 md:grid-cols-10 lg:grid-cols-10 justify-items-center'>
-          <CategoriesItem />
+        <div className='grid gap-2 grid-cols-1 md:grid-cols-8 lg:grid-cols-8  justify-items-center'>
+          {categories.slice(0, 8).map((category) => (
+            <CategoriesItem
+              key={category.id}
+              category={category}
+            />
+          ))}
         </div>
       </div>
     </section>

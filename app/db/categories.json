@@ -1,0 +1,66 @@
+[
+    {
+        "title": "Men's Fashion",
+        "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1749187970/man_xerdxx.png"
+      },
+    {
+        "title": "Womenen's Fashion",
+        "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1749187967/woman-fashon_gli2yk.png"
+      },
+    {
+        "title": "Kid's Fashion",
+        "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1749187966/baby-frog_iyhltn.webp"
+      },
+    {
+        "title": "Health & Beauty",
+        "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1749187967/health_afyums.webp"
+      },
+    {
+        "title": "Pet Supplies",
+        "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1749187968/pet_jragdh.webp"
+      },
+    {
+        "title": "Home & Kitchen",
+        "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1749187968/home_erhoyj.png"
+      },
+    {
+        "title": "Baby & Toddler",
+        "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1749187969/toy-and-kids_orjj56.png"
+      },
+    {
+        "title": "Sports & Outdoor",
+        "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1749187968/outdoor_vuhrwp.png"
+      },
+    {
+        "title": "Phone & Gadgets",
+        "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1747533497/iphon_o6twdl.webp"
+      },
+    {
+        "title": "Electronics & Gadgets",
+        "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1747534540/laptop_cqmmsu.webp"
+      },
+    {
+        "title": "Groceries & Dailies",
+        "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1749187967/grocerice_sclhpz.webp"
+      },
+    {
+        "title": "Musical Instruments",
+        "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1749187968/music_exyjhf.webp"
+      },
+    {
+        "title": "Gifts & Crafts",
+        "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1749187966/gift_v0zx0t.webp"
+      },
+    {
+        "title": "Digital Products",
+        "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1749187966/ebook_hgocvt.png"
+      },
+    {
+        "title": "Travel & Luggage",
+        "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1749187965/travel_pggmnx.webp"
+      },
+    {
+        "title": "Books & Stationery",
+        "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1749187966/ebook_hgocvt.png"
+      }
+]
