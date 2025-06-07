@@ -46,7 +46,7 @@ const Slider = () => {
             key={sli.id}
             className=' pl-1 md:basis-1/1 lg:basis-1/1'>
             <div className='p-1'>
-              <Card className=' py-0 h-[400px] border-none shadow-none '>
+              <Card className=' py-0  lg:h-[400px] border-none shadow-none '>
                 <CardContent className=''>
                   <Image
                     src={sli.img}
@@ -61,8 +61,6 @@ const Slider = () => {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
     </AutoPlayCarosel>
   );
 };

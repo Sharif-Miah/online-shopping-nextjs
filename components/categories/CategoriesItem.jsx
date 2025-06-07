@@ -5,8 +5,8 @@ import img from '@/public/categories-img/man.png';
 
 const CategoriesItem = ({ category }) => {
   return (
-    <div className='container'>
-      <div className='border-none cursor-pointer lg:absolute ml-0 p-0 w-[150px]'>
+    <div className='lg:container'>
+      <div className='border-none cursor-pointer lg:absolute ml-0 p-0 w-[150px] sm:mx-auto'>
         <CardContent className='hover:text-[#ff7d1e] hover:font-semibold '>
           <div>
             <Image

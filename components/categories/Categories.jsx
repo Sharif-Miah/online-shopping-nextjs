@@ -22,7 +22,7 @@ const Categories = async () => {
             </Link>
           </div>
         </div>
-        <div className='grid gap-2 grid-cols-1 md:grid-cols-8 lg:grid-cols-8 ml-0 justify-items-center'>
+        <div className='grid gap-2 grid-cols-1 md:grid-cols-8 lg:grid-cols-8 ml-0 justify-items-center '>
           {categories.slice(0, 8).map((category) => (
             <CategoriesItem
               key={category.id}
