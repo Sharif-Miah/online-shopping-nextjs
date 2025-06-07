@@ -13,7 +13,7 @@ const CaroseContent = ({ feture }) => {
             <div>
               <Image
                 src={feture.imageUrl}
-                alt=''
+                alt={feture.title}
                 width={100}
                 height={100}
               />

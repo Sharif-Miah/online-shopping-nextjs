@@ -5,10 +5,10 @@ import img from '@/public/categories-img/man.png';
 
 const CategoriesItem = ({ category }) => {
   return (
-    <div className='sm:mx-auto  '>
-      <Card className='border-none cursor-pointer lg:absolute p-0 w-[150px]'>
-        <CardContent className='  hover:text-[#ff7d1e] hover:font-semibold '>
-          <div className=''>
+    <div className='container'>
+      <div className='border-none cursor-pointer lg:absolute ml-0 p-0 w-[150px]'>
+        <CardContent className='hover:text-[#ff7d1e] hover:font-semibold '>
+          <div>
             <Image
               src={category.imageUrl}
               alt='categories products image'
@@ -21,7 +21,7 @@ const CategoriesItem = ({ category }) => {
             </h5>
           </div>
         </CardContent>
-      </Card>
+      </div>
     </div>
   );
 };
