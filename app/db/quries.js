@@ -8,6 +8,7 @@ import { flashModel } from '@/models/flash-image-model';
 import { paymentModel } from '@/models/payment-model';
 import { featureModel } from '@/models/feture-model';
 import { categoriesModel } from '@/models/categories';
+import { categoryBaseModel } from '@/models/categoryBaseProduct';
 
 // ---------------------- create All flash product start -------------------------
 
@@ -45,6 +46,15 @@ async function getAllCategories() {
 
 // ------------- categories product end --------------------
 
+// ------------- Categories Base product start --------------------
+
+async function getAllCategoriesBaseProduct() {
+  const categoriesByProduct = await categoryBaseModel.find().lean();
+  return replaceMongoIdInArray(categoriesByProduct);
+}
+
+// ------------- Categories Base product end --------------------
+
 // create Login
 async function findUserByCredentials(credentials) {
   const user = await userModel.findOne(credentials).lean();
@@ -75,6 +85,7 @@ export {
   getALLfeatureImage,
   getFeatureById,
   getAllCategories,
+  getAllCategoriesBaseProduct,
   findUserByCredentials,
   getUserByEmail,
   getAllBooking,
