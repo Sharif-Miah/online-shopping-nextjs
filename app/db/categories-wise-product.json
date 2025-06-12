@@ -206,66 +206,201 @@
     "categories": "kids"
   },
   {
-    "title": "Cool Running shoe",
-    "details": "Elevate your running experience with the Cool Running Shoe. Designed for both performance and comfort, these shoes feature breathable mesh uppers to keep your feet cool, lightweight cushioning for optimal support, and a durable rubber outsole for excellent traction on any surface. Whether you're hitting the pavement or the trail, these shoes will keep you moving smoothly.",
-    "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1749359565/kids-shows_kwvn7t.webp",
-    "price": 80,
+    "title": "Concealer Foundation",
+    "details": "Achieve flawless coverage with the Concealer Foundation, a versatile 2-in-1 formula that conceals imperfections while providing a smooth, even finish. This lightweight yet buildable foundation effortlessly hides blemishes, dark circles, and redness, offering long-lasting wear without caking or creasing. Suitable for all skin types, its hydrating formula ensures a natural look that enhances your complexion, leaving you radiant throughout the day.",
+    "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1749359529/foundtion_rltgab.webp",
+    "price": 25,
     "rating": 4.5,
     "percent": 5,
-    "categories": "womens"
+    "categories": "health"
   },
   {
-    "title": "Bohemiantee Shirt Tops",
-    "details": "Stay effortlessly stylish with our Bohemiantee Shirt Tops, featuring a relaxed fit and chic bohemian-inspired patterns. Crafted from soft, breathable fabric, this top is perfect for casual days, festivals, or beach outings. Pair it with jeans, shorts, or skirts for a carefree, boho look that’s always on-trend.",
-    "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1749359588/shirt-tops_jpaeiz.webp",
-    "price": 19,
+    "title": "Rosemary Conditioner",
+    "details": "Revitalize your hair with our Rosemary Conditioner, expertly crafted to nourish and hydrate your locks while enhancing natural shine. Infused with organic rosemary extract, this conditioner not only detangles but also strengthens and revitalizes dull, lifeless hair. Perfect for all hair types, it leaves your hair feeling silky soft, manageable, and full of vitality.",
+    "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1749359529/conditionar_q8hyqm.webp",
+    "price": 20,
     "rating": 4.5,
     "percent": 5,
-    "categories": "womens"
+    "categories": "health"
   },
   {
-    "title": "Leather Single Shoes",
-    "details": "Step into elegance and comfort with these Leather Single Shoes, designed for women who appreciate both style and practicality. Crafted from high-quality genuine leather, these shoes offer a sleek, minimalist look with a durable, comfortable sole. Perfect for both casual and formal occasions, they feature a slip-on design that ensures ease and convenience for everyday wear.",
-    "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1749359572/lady-single-shows_x0usxd.webp",
-    "price": 32,
+    "title": "Styling Gel Cream",
+    "details": "Achieve your desired hairstyle with our Styling Gel Cream! This versatile formula offers a perfect blend of hold and flexibility, making it ideal for all hair types. Whether you’re going for sleek and polished or tousled and textured, this gel cream provides a long-lasting finish without the crunch. Enriched with nourishing ingredients, it keeps your hair healthy and hydrated while offering a brilliant shine.",
+    "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1749359529/gel-cream_xpb3qy.webp",
+    "price": 20,
     "rating": 4.5,
     "percent": 5,
-    "categories": "womens"
+    "categories": "health"
   },
   {
-    "title": "Handbag Bags for Women",
-    "details": "Elevate your style with our versatile Handbag Bags for Women, designed for both fashion and function. Made from premium materials, this handbag is perfect for everyday use, whether you're heading to work, a night out, or running errands. With multiple compartments and a chic design, it effortlessly combines practicality with elegance.",
-    "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1747533914/bags_u2rbar.webp",
+    "title": "Argen Hair Oil",
+    "details": "Revitalize your hair with Argen Hair Oil, a luxurious blend of natural ingredients designed to nourish and restore your locks. Infused with the goodness of argan oil, this lightweight formula penetrates deeply to hydrate, strengthen, and protect your hair from damage. Whether you’re battling dryness, frizz, or split ends, Argen Hair Oil leaves your hair soft, shiny, and manageable.",
+    "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1749359530/hear-oil_novpgj.webp",
+    "price": 45,
+    "rating": 4.5,
+    "percent": 5,
+    "categories": "health"
+  },
+  {
+    "title": "Coconut Oil Mask",
+    "details": "Revitalize your skin with our Coconut Oil Mask, a luxurious blend designed to hydrate, nourish, and rejuvenate. Infused with 100% organic coconut oil, this mask deeply penetrates the skin, leaving it soft, supple, and radiant. Perfect for all skin types, it helps to reduce dryness, improve elasticity, and enhance your natural glow.",
+    "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1749359578/oil-mask_iekb0z.webp",
+    "price": 20,
+    "rating": 4.5,
+    "percent": 5,
+    "categories": "health"
+  },
+  {
+    "title": "Hair Dye Shampoo",
+    "details": "Transform your hair with our innovative Hair Dye Shampoo! This all-in-one formula combines the cleansing power of a shampoo with vibrant color-dye technology, allowing you to refresh your look while washing your hair. Infused with nourishing ingredients, it gently cleanses your scalp and leaves your hair looking radiant and healthy. Perfect for a quick color boost or maintenance between salon visits, our Hair Dye Shampoo is suitable for all hair types and is free from harsh chemicals.",
+    "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1749359528/dye-shampo_ly6kyo.webp",
+    "price": 25,
+    "rating": 4.5,
+    "percent": 5,
+    "categories": "health"
+  },
+  {
+    "title": "Moisturizing Cream",
+    "details": "Our Moisturizing Cream is a hydrating and nourishing formula designed to keep your skin soft, smooth, and healthy. It is enriched with natural ingredients that help to lock in moisture, improve skin texture, and provide long-lasting hydration. Suitable for all skin types, this lightweight, non-greasy cream absorbs quickly, making it perfect for daily use.",
+    "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1748706437/cream_avcrsf.webp",
     "price": 50,
     "rating": 4.5,
     "percent": 5,
-    "categories": "womens"
+    "categories": "health"
   },
   {
-    "title": "Bohemiantee Shirt Tops",
-    "details": "Stay effortlessly stylish with our Bohemiantee Shirt Tops, featuring a relaxed fit and chic bohemian-inspired patterns. Crafted from soft, breathable fabric, this top is perfect for casual days, festivals, or beach outings. Pair it with jeans, shorts, or skirts for a carefree, boho look that’s always on-trend.",
-    "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1749359588/shirt-tops_jpaeiz.webp",
-    "price": 19,
+    "title": "Dog Coat Jacket",
+    "details": "Description: Keep your dog warm with the Dog Coat Jacket. This stylish coat features a comfortable fit and is perfect for chilly days. Specifications: - Material: Waterproof fabric - Sizes: Various Standard Uses: Ideal for walks and outdoor activities. Protect your dog from the cold with the Dog Coat Jacket!",
+    "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1749359529/doc-jacket_afqrjc.webp",
+    "price": 30,
     "rating": 4.5,
     "percent": 5,
-    "categories": "womens"
+    "categories": "petsupplies"
   },
   {
-    "title": "Leather Single Shoes",
-    "details": "Step into elegance and comfort with these Leather Single Shoes, designed for women who appreciate both style and practicality. Crafted from high-quality genuine leather, these shoes offer a sleek, minimalist look with a durable, comfortable sole. Perfect for both casual and formal occasions, they feature a slip-on design that ensures ease and convenience for everyday wear.",
-    "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1749359572/lady-single-shows_x0usxd.webp",
-    "price": 32,
-    "rating": 4.5,
-    "percent": 5,
-    "categories": "womens"
-  },
-  {
-    "title": "Handbag Bags for Women",
-    "details": "Elevate your style with our versatile Handbag Bags for Women, designed for both fashion and function. Made from premium materials, this handbag is perfect for everyday use, whether you're heading to work, a night out, or running errands. With multiple compartments and a chic design, it effortlessly combines practicality with elegance.",
-    "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1747533914/bags_u2rbar.webp",
+    "title": "Aquarium Fish Food",
+    "details": "Description: Provide your fish with the essential nutrients they need with our Aquarium Fish Food. This balanced formula promotes healthy growth and vibrant colors. Specifications: - Weight: 200 grams - Ingredients: High-quality fish meal Standard Uses: Ideal for all types of aquarium fish. Keep your fish happy and healthy with our premium fish food!",
+    "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1749359529/fish-food_ihtvxs.webp",
     "price": 50,
     "rating": 4.5,
     "percent": 5,
-    "categories": "womens"
+    "categories": "petsupplies"
+  },
+  {
+    "title": "Indoor Cat Bed",
+    "details": "Description: Give your cat a cozy place to relax with the Indoor Cat Bed. This soft and comfortable bed is perfect for napping and lounging. Specifications: - Material: Soft fabric - Size: Fits most cats Standard Uses: Ideal for indoor cats. Provide comfort for your feline friend with the Indoor Cat Bed!",
+    "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1749359529/cat-bed_bzr30n.webp",
+    "price": 60,
+    "rating": 4.5,
+    "percent": 5,
+    "categories": "petsupplies"
+  },
+  {
+    "title": "Cat Grass Treats Snacks",
+    "details": "Description: Treat your cat to our Cat Grass Treats Snacks. These nutritious snacks are perfect for promoting digestive health and satisfying your cat’s cravings. Specifications: - Weight: 100 grams - Ingredients: Natural cat grass Standard Uses: Ideal for all cats. Keep your cat happy and healthy with our Cat Grass Treats!",
+    "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1749359593/snacks_b6xm2y.webp",
+    "price": 6,
+    "rating": 4.5,
+    "percent": 5,
+    "categories": "petsupplies"
+  },
+  {
+    "title": "Water Purifier",
+    "details": "The Water Purifier is designed to provide clean, safe drinking water for you and your family. Utilizing advanced filtration technology, this purifier removes harmful contaminants while retaining essential minerals. With a sleek design and user-friendly interface, it’s perfect for any kitchen, ensuring you enjoy pure and refreshing water at all times.",
+    "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1749359593/water-filter_ld3lsr.webp",
+    "price": 269,
+    "rating": 4.5,
+    "percent": 5,
+    "categories": "home & kitchen"
+  },
+  {
+    "title": "Mainstays LED Desk Lamp",
+    "details": "Description: Illuminate your workspace with the Mainstays LED Desk Lamp. This stylish and functional lamp offers adjustable brightness levels, making it perfect for studying or working. Specifications: - Light Source: LED - Design: Modern and sleek Standard Uses: Ideal for desks, offices, and reading areas. Upgrade your lighting with the Mainstays LED Desk Lamp!",
+    "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1749359573/lamp_o7sv2v.webp",
+    "price": 30,
+    "rating": 4.5,
+    "percent": 5,
+    "categories": "home & kitchen"
+  },
+  {
+    "title": "5 in 1 Toaster Oven Countertop",
+    "details": "Description: Simplify your cooking with the 5 in 1 Toaster Oven Countertop. This versatile appliance features multiple cooking functions, making it perfect for all your meals. Specifications: - Capacity: Fits 6 slices of bread - Features: Adjustable temperature Standard Uses: Ideal for toasting, baking, and broiling. Enhance your kitchen with the 5 in 1 Toaster Oven!",
+    "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1748706437/fireplace_arvors.webp",
+    "price": 90,
+    "rating": 4.5,
+    "percent": 5,
+    "categories": "home & kitchen"
+  },
+  {
+    "title": "Wood Analog Wall Clock",
+    "details": "Description: Keep track of time with the Wood Analog Wall Clock. This classic design adds a touch of elegance to any room while providing accurate timekeeping. Specifications: - Material: Wood - Design: Classic analog Standard Uses: Perfect for living rooms, offices, and kitchens. Enhance your decor with the Wood Analog Wall Clock!",
+    "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1749359529/clock_rbty9j.webp",
+    "price": 40,
+    "rating": 4.5,
+    "percent": 5,
+    "categories": "home & kitchen"
+  },
+  {
+    "title": "Beautiful Electric Kettle",
+    "details": "Description: Enjoy the convenience of the Beautiful Electric Kettle. This kettle features quick boiling technology and an elegant design, perfect for any kitchen. Specifications: - Material: Stainless steel - Capacity: 1.7 liters Standard Uses: Ideal for tea, coffee, and instant meals. Upgrade your kitchen with the Beautiful Electric Kettle!",
+    "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1749359530/ketle_quxxer.webp",
+    "price": 50,
+    "rating": 4.5,
+    "percent": 5,
+    "categories": "home & kitchen"
+  },
+  {
+    "title": "Side-by-Side Refrigerator",
+    "details": "Description: Upgrade your kitchen with the Side-by-Side Refrigerator. This spacious fridge features ample storage and modern amenities, perfect for any household. Specifications: - Capacity: 25 cubic feet - Features: Water and ice dispenser Standard Uses: Ideal for families and large kitchens. Enjoy convenience with the Side-by-Side Refrigerator!",
+    "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1747534960/fridge_ifabzd.webp",
+    "price": 1000,
+    "rating": 4.5,
+    "percent": 5,
+    "categories": "home & kitchen"
+  },
+  {
+    "title": "Toddler Down Jacket",
+    "details": " Keep your toddler warm with the Toddler Down Jacket. This stylish jacket features down insulation and a cozy fit, perfect for chilly days. Specifications: - Material: Water-resistant fabric - Sizes: Various Standard Uses: Ideal for winter outings and play. Protect your toddler from the cold with the Toddler Down Jacket",
+    "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1749359529/baby-top_elaian.webp",
+    "price": 50,
+    "rating": 4.5,
+    "percent": 5,
+    "categories": "Baby & Toddler"
+  },
+  {
+    "title": "Kids Building Sets",
+    "details": "Foster creativity with the Kids Building Sets. These versatile sets encourage imaginative play and are perfect for young builders. Specifications: - Material: Plastic - Number of Pieces: 50 Standard Uses: Ideal for indoor play and learning. Inspire creativity with our Kids Building Sets!",
+    "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1749359528/baby-building_wyoqq9.webp",
+    "price": 30,
+    "rating": 4.5,
+    "percent": 5,
+    "categories": "Baby & Toddler"
+  },
+  {
+    "title": "MIYAUP Exercise Bike",
+    "details": "Description: Pedal your way to fitness with the MIYAUP Exercise Bike. This bike features adjustable settings and a comfortable seat for smooth rides. Specifications: - Material: Steel - Max Weight Capacity: 280 lbs Standard Uses: Ideal for indoor cycling and cardio workouts.",
+    "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1749359529/excercise-bike_fqloey.webp",
+    "price": 400,
+    "rating": 4.5,
+    "percent": 5,
+    "categories": "Sports & Outdoor"
+  },
+  {
+    "title": "TWITTER X RS-24S Gravel Bike",
+    "details": "Description: Conquer any terrain with the TWITTER X RS-24S Gravel Bike. This bike features a lightweight frame and durable components. Specifications: - Frame Material: Aluminum - Gear: 18 speeds Standard Uses: Ideal for gravel riding and adventures.",
+    "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1749359529/cycle_hzfuq6.webp",
+    "price": 850,
+    "rating": 4.5,
+    "percent": 5,
+    "categories": "Sports & Outdoor"
+  },
+  {
+    "title": "Cycling Jersey Set",
+    "details": "Description: Enhance your cycling experience with our Cycling Jersey Set. This set includes a breathable jersey and padded shorts. Specifications: - Material: Moisture-wicking fabric - Sizes: S, M, L Standard Uses: Ideal for long rides and cycling events.",
+    "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1749359530/jursey-set_lmimc4.webp",
+    "price": 40,
+    "rating": 4.5,
+    "percent": 5,
+    "categories": "Sports & Outdoor"
   }
 ]
