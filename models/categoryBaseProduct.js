@@ -28,5 +28,5 @@ const schema = new Schema({
 });
 
 export const categoryBaseModel =
-  mongoose.models.categoriesbaseproduct ??
-  mongoose.model('categoriesbaseproduct', schema);
+  mongoose.models.categoriesbaseproducts ??
+  mongoose.model('categoriesbaseproducts', schema);

@@ -3,9 +3,6 @@ import ViewButton from '../sheard/ViewButton';
 import FeaturedCardItem from './FeaturedCardItem';
 
 const FeaturedDeal = async () => {
-  const allproduct = await getAllCategoriesBaseProduct();
-  console.log(allproduct);
-
   return (
     <section className='my-6 bg-[#e5f1ff] py-6 rounded'>
       <h2 className='text-[#1455ac] ml-5 font-bold text-2xl'>Featured Deal</h2>
