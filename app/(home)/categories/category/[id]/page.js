@@ -12,8 +12,14 @@ import {
 } from '@/components/ui/dropdown-menu';
 import { CardContent } from '@/components/ui/card';
 import Image from 'next/image';
+import { getCategoriesById } from '@/app/db/quries';
+import ProductCalculate from '@/components/ProductCalculate';
+import DeleveryQA from '@/components/DeleveryQA';
+import QuestionAnswer from '@/components/sheard/QuestionAnswer';
 
-const CategoryBaseProduct = () => {
+const CategoryBaseProduct = async ({ params: { id } }) => {
+  const categoryProduct = await getCategoriesById(id);
+
   return (
     <div className='container mx-auto py-12'>
       <div className='bg-[#eef6ff] py-8 px-4 rounded-xl sm:my-4 lg:my-0 flex flex-col lg:flex-row justify-between '>
@@ -55,25 +61,37 @@ const CategoryBaseProduct = () => {
         </div>
       </div>
 
-      <div className='my-9'>
-        <div className='border cursor-pointer  ml-0 p-0 w-[200px] sm:mx-auto'>
-          <CardContent className=''>
-            <div>
+      <section className='max-w-7xl mx-auto'>
+        <div className='my-8'>
+          <div className='flex flex-col md:flex-row  gap-2'>
+            <div className='flex-shrink-0 w-full md:w-1/3 '>
+              {/* Single Image Carosel  */}
               <Image
-                src={`/airpod.png`}
-                alt='categories products image'
-                className='w-32 rounded transition duration-500 hover:scale-75'
-                height={100}
-                width={100}
+                src={categoryProduct.imageUrl}
+                alt=''
+                width={500}
+                height={400}
               />
-              <h5 className='text-center text-sm font-semibold hover:text-[#1455ac] transition duration-500'>
-                there is a title for category by product
-              </h5>
-              <p className='text-center'>price: $250</p>
             </div>
-          </CardContent>
+
+            <div className='flex-grow w-full md:w-2/3  ml-5'>
+              <div className='flex flex-col md:flex-row gap-2'>
+                {/* Middle Column  */}
+                <ProductCalculate product={categoryProduct} />
+                {/* Last column  */}
+                <div className='flex-shrink-0 w-full md:w-1/3 '>
+                  <DeleveryQA />
+                  {/* <SimilarProduct /> */}
+                </div>
+              </div>
+            </div>
+          </div>
+          <p className='w-2/3 sm:mx-auto lg:ml-24 text-md leading-6'>
+            {categoryProduct.details}
+          </p>
+          <QuestionAnswer />
         </div>
-      </div>
+      </section>
     </div>
   );
 };

@@ -46,7 +46,7 @@ const CardWithFlasDeal = ({ photo }) => {
         </div>
       </CardContent>
       <CardFooter className='justify-center'>
-        <Link href={`/flash-details/${photo.id}/payment`}>
+        <Link href={`/payment`}>
           <button className='bg-[#1455ac]  py-1 px-3 rounded text-white font-medium text-md'>
             Buy Now
           </button>

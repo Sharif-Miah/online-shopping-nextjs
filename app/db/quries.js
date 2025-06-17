@@ -44,14 +44,16 @@ async function getAllCategories() {
   return replaceMongoIdInArray(categories);
 }
 
+async function getCategoriesById(categoryId) {
+  const singleCategoryProduct = await categoriesModel
+    .findById(categoryId)
+    .lean();
+  return replaceMongoIdInObject(singleCategoryProduct);
+}
+
 // ------------- categories product end --------------------
 
 // ------------- Categories Base product start --------------------
-
-async function getAllCategoriesBaseProduct() {
-  const categoriesByProduct = await categoryBaseModel.find().lean();
-  return replaceMongoIdInArray(categoriesByProduct);
-}
 
 // ------------- Categories Base product end --------------------
 
@@ -85,7 +87,7 @@ export {
   getALLfeatureImage,
   getFeatureById,
   getAllCategories,
-  getAllCategoriesBaseProduct,
+  getCategoriesById,
   findUserByCredentials,
   getUserByEmail,
   getAllBooking,

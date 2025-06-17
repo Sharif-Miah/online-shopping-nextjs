@@ -1,6 +1,7 @@
 import { getAllCategories } from '@/app/db/quries';
 import CategoryCart from '@/components/categories/categoryCart';
 import { Input } from '@/components/ui/input';
+import Link from 'next/link';
 import { IoIosSearch } from 'react-icons/io';
 
 const CategoriesPage = async () => {
@@ -32,10 +33,11 @@ const CategoriesPage = async () => {
 
         <div className='grid grid-cols-1 gap-2 justify-center  lg:grid-cols-8 mt-4'>
           {categories.map((category) => (
-            <CategoryCart
+            <Link
               key={category.id}
-              category={category}
-            />
+              href={`categories/category/${category.id}`}>
+              <CategoryCart category={category} />
+            </Link>
           ))}
         </div>
       </div>

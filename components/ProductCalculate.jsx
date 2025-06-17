@@ -84,7 +84,7 @@ const ProductCalculate = ({ product }) => {
         </div>
 
         <div className='mt-5 flex'>
-          <Link href={`/flash-details/${product.id}/payment`}>
+          <Link href={`/payment`}>
             <button className='bg-[#dd7f13] hover:bg-[#c47112] text-white font-normal text-md  py-2 mt-0  ml-2 border-black px-5  rounded'>
               Buy Now
             </button>
