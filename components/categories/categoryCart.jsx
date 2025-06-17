@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const CategoryCart = ({ category }) => {
   return (
-    <Card className='w-[150px] mb-6 mx-auto rounded'>
+    <Card className='w-[150px] h-[230px] mb-6 mx-auto rounded'>
       <CardContent className='px-2'>
         <div>
           <div className=' mt-3 relative'>
@@ -18,6 +18,9 @@ const CategoryCart = ({ category }) => {
         </div>
 
         <h5 className='text-center text-sm font-semibold'>{category.title}</h5>
+        <h5 className='text-center text-sm font-semibold'>
+          price: ${category.price}
+        </h5>
       </CardContent>
     </Card>
   );
