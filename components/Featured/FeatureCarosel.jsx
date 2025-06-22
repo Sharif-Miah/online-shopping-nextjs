@@ -1,7 +1,6 @@
-'use client';
+// 'use client';
 
 import {
-  Carousel,
   CarouselContent,
   CarouselNext,
   CarouselPrevious,
