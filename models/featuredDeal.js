@@ -23,5 +23,5 @@ const schema = new Schema({
   },
 });
 
-export const featureModel =
-  mongoose.models.featuredeal ?? mongoose.model('featuredeal', schema);
+export const featuredDealeModel =
+  mongoose.models.featuredeals ?? mongoose.model('featuredeals', schema);

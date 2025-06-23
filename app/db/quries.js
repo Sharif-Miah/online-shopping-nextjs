@@ -9,6 +9,7 @@ import { paymentModel } from '@/models/payment-model';
 import { featureModel } from '@/models/feture-model';
 import { categoriesModel } from '@/models/categories';
 import { categoryBaseModel } from '@/models/categoryBaseProduct';
+import { featuredDealeModel } from '@/models/featuredDeal';
 
 // ---------------------- create All flash product start -------------------------
 
@@ -36,6 +37,21 @@ async function getFeatureById(featureId) {
 }
 
 // ------------------- create feture product end ---------------------
+// ------------------- create fetured Deal product start ---------------------
+
+async function getALLFeaturedeal() {
+  const allFeatureDealImages = await featuredDealeModel.find().lean();
+  return replaceMongoIdInArray(allFeatureDealImages);
+}
+
+async function getFeaturedealById(featureId) {
+  const featureDealProduct = await featuredDealeModel
+    .findById(featureId)
+    .lean();
+  return replaceMongoIdInObject(featureDealProduct);
+}
+
+// ------------------- create fetured Deal product end ---------------------
 
 // ------------- categories product start --------------------
 
@@ -86,6 +102,8 @@ export {
   getFlashById,
   getALLfeatureImage,
   getFeatureById,
+  getALLFeaturedeal,
+  getFeaturedealById,
   getAllCategories,
   getCategoriesById,
   findUserByCredentials,

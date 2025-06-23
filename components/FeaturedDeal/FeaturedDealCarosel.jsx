@@ -9,17 +9,18 @@ import Link from 'next/link';
 import FeaturedCardItem from './FeaturedCardItem';
 import AutoPlayCarosel from '../Featured/Carousel';
 
-const FeaturedDealCarosel = () => {
+const FeaturedDealCarosel = ({ product }) => {
   return (
-    <div className='ml-14'>
-      <AutoPlayCarosel>
-        <CarouselContent className='-ml-1'>
-          <FeaturedCardItem />
-        </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
-      </AutoPlayCarosel>
-    </div>
+    <AutoPlayCarosel>
+      <CarouselContent className='-ml-1'>
+        {product.map((prod) => (
+          <FeaturedCardItem
+            key={prod}
+            prod={prod}
+          />
+        ))}
+      </CarouselContent>
+    </AutoPlayCarosel>
   );
 };
 

@@ -107,26 +107,5 @@
     "price": 1158,
     "rating": 4.5,
     "percent": 5
-  },
-  {
-    "_id": {
-      "$oid": "683b2b6583873b52187aa790"
-    },
-    "title": "Fireplaces Cook Stoves",
-    "details": "Experience the warmth and charm of traditional cooking with these Fireplaces Cook Stoves. Built for both functionality and aesthetics, these stoves offer the perfect combination of heating and cooking capabilities. Ideal for rustic kitchens, cabins, or as a backup heat source, they bring the cozy ambiance of a fireplace along with the practicality of a cook stove. Crafted from durable materials, they are designed to last and provide efficient heating.",
-    "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1748706438/mac-book_fv4pvo.webp",
-    "price": 1200,
-    "rating": 4.5,
-    "percent": 5
-  },
-  {
-    "_id": {
-      "$oid": "683b2b6583873b52187aa791"
-    },
-    "title": "Men's Casual Shoes",
-    "details": "Step into comfort and style with these Women's Casual Shoes, perfect for everyday wear. Designed with a lightweight structure and breathable material, they keep your feet cool and comfortable all day long. The versatile design pairs effortlessly with jeans, dresses, or skirts, making them a wardrobe essential.",
-    "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1748706438/mac-book_fv4pvo.webp",
-    "price": 450,
-    "rating": 4.5,
-    "percent": 5
-  }]
+  }
+  ]
