@@ -14,10 +14,11 @@ const FeaturedDealCarosel = ({ product }) => {
     <AutoPlayCarosel>
       <CarouselContent className='-ml-1'>
         {product.map((prod) => (
-          <FeaturedCardItem
-            key={prod}
-            prod={prod}
-          />
+          <Link
+            key={prod.id}
+            href={`/featured-deal/${prod.id}`}>
+            <FeaturedCardItem feture={prod} />
+          </Link>
         ))}
       </CarouselContent>
     </AutoPlayCarosel>

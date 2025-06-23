@@ -3,7 +3,7 @@ import { Card, CardContent } from '../ui/card';
 
 import { CarouselItem } from '@/components/ui/carousel';
 
-const FeaturedCardItem = ({ prod }) => {
+const FeaturedCardItem = ({ feture }) => {
   return (
     <CarouselItem className='z-10 pl-1 basis-1/1  md:basis-1/2 lg:basis-1/4'>
       <div className='p-1 '>
@@ -15,8 +15,8 @@ const FeaturedCardItem = ({ prod }) => {
                   -{5}%
                 </span>
                 <Image
-                  src={prod.imageUrl}
-                  alt={prod.title}
+                  src={feture.imageUrl}
+                  alt={feture.title}
                   className='rounded-xl w-[100px]'
                   width={100}
                   height={100}
@@ -24,10 +24,10 @@ const FeaturedCardItem = ({ prod }) => {
               </div>
               <div className='mt-5 w-2/3 '>
                 <h5 className='text-black text-sm font-thin w-[180px]'>
-                  {prod.title}
+                  {feture.title}
                 </h5>
                 <div className='flex gap-1'>
-                  <p className='text-sm mt-1 text-gray-400'>${prod.price}</p>
+                  <p className='text-sm mt-1 text-gray-400'>${feture.price}</p>
                 </div>
               </div>
             </div>

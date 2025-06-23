@@ -1,11 +1,11 @@
-import { getFeatureById } from '@/app/db/quries';
+import { getFeaturedealById } from '@/app/db/quries';
 import DeleveryQA from '@/components/DeleveryQA';
 import ProductCalculate from '@/components/ProductCalculate';
 import QuestionAnswer from '@/components/sheard/QuestionAnswer';
 import Image from 'next/image';
 
-const FeatureDetailsPage = async ({ params: { id } }) => {
-  const feature = await getFeatureById(id);
+const FeatureDealDetailsPage = async ({ params: { id } }) => {
+  const feature = await getFeaturedealById(id);
   return (
     <section className='max-w-7xl mx-auto'>
       <div className='my-8'>
@@ -41,4 +41,4 @@ const FeatureDetailsPage = async ({ params: { id } }) => {
   );
 };
 
-export default FeatureDetailsPage;
+export default FeatureDealDetailsPage;
