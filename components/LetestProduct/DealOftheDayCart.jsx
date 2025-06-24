@@ -9,8 +9,9 @@ import {
 import Image from 'next/image';
 import { Button } from '../ui/button';
 import nakles from '@/public/nekles.png';
+import Link from 'next/link';
 
-const DealOftheDayCart = () => {
+const DealOftheDayCart = ({ product }) => {
   return (
     <Card className='border-[#1455ac] bg-[#f3f8fe]'>
       <CardHeader className='p-0 pt-4'>
@@ -20,32 +21,33 @@ const DealOftheDayCart = () => {
       </CardHeader>
       <CardContent className='grid gap-4 bg-white m-6 p-6 rounded'>
         <div className=' flex items-center space-x-4  rounded-md '>
-          <div className='relative'>
+          <div className='relative mx-auto'>
             <span className='text-md font-medium absolute mt-2 ml-2 z-[100] bg-[#1455ac] py-1  px-2   text-white rounded'>
               -10%
             </span>
             <Image
-              src={nakles}
-              alt=''
-              className='border '
+              src={product.imageUrl}
+              alt={product.title}
+              className='border mx-auto'
+              width={300}
+              height={300}
             />
           </div>
         </div>
         <div>
           <h4 className='font-semibold text-center'>
-            Stone Crystal Unique Design Necklace Woman Exquisite Wild Short
-            Clavicle Chain
+            <Link href={`/latestproduct/${product.id}`}>{product.title}</Link>
           </h4>
           <div className='mt-2 flex justify-center'>
             <div className='flex gap-1'>
-              <p className='text-sm mt-1 line-through text-gray-400'>${450}</p>
+              <p className='text-md mt-1 font-semibold  text-black'>${450}</p>
             </div>
           </div>
         </div>
       </CardContent>
       <CardFooter>
         <Button className='w-full bg-[#1455ac] text-white rounded hover:bg-[#1455ac]'>
-          Buy Now
+          <Link href='/payment'> Buy Now</Link>
         </Button>
       </CardFooter>
     </Card>

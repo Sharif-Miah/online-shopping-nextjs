@@ -10,6 +10,7 @@ import { featureModel } from '@/models/feture-model';
 import { categoriesModel } from '@/models/categories';
 import { categoryBaseModel } from '@/models/categoryBaseProduct';
 import { featuredDealeModel } from '@/models/featuredDeal';
+import { letestProductModel } from '@/models/latestProducts';
 
 // ---------------------- create All flash product start -------------------------
 
@@ -69,9 +70,21 @@ async function getCategoriesById(categoryId) {
 
 // ------------- categories product end --------------------
 
-// ------------- Categories Base product start --------------------
+// ------------- Latest Product Base product start --------------------
 
-// ------------- Categories Base product end --------------------
+async function getAllLatestProduct() {
+  const latestProduct = await letestProductModel.find().lean();
+  return replaceMongoIdInArray(latestProduct);
+}
+
+async function getLatestProductById(latestId) {
+  const singleLatestProduct = await letestProductModel
+    .findById(latestId)
+    .lean();
+  return replaceMongoIdInObject(singleLatestProduct);
+}
+
+// ------------- Latest Product Base product end --------------------
 
 // create Login
 async function findUserByCredentials(credentials) {
@@ -106,6 +119,8 @@ export {
   getFeaturedealById,
   getAllCategories,
   getCategoriesById,
+  getAllLatestProduct,
+  getLatestProductById,
   findUserByCredentials,
   getUserByEmail,
   getAllBooking,
