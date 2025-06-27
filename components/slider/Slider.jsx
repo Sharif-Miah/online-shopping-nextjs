@@ -47,7 +47,7 @@ const Slider = () => {
             className=' pl-1 md:basis-1/1 lg:basis-1/1'>
             <div className='p-1'>
               <Card className=' py-0 lg:h-[400px] border-none shadow-none '>
-                <CardContent className=''>
+                <CardContent>
                   <Image
                     src={sli.img}
                     className='rounded'

@@ -1,0 +1,75 @@
+[
+    {
+      "title": "iPhone 14 Pro Max",
+      "details": "The iPhone 14 Pro Max takes smartphone technology to the next level with its powerful A16 Bionic chip, ProMotion display, and all-new 48MP camera system. Featuring an immersive 6.7-inch Super Retina XDR display with Dynamic Island, the iPhone 14 Pro Max delivers stunning visuals, ultra-fast performance, and next-level photography, all wrapped in sleek, durable glass and stainless steel.",
+      "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1747533497/iphon_o6twdl.webp",
+      "price": 250,
+      "discount": 220,
+      "rating": 4.5,
+      "percent": 5
+    },
+    {
+      "title": "Beauty Jelly Lipstick",
+      "details": "Add a touch of vibrant color and hydration with the Beauty Jelly Lipstick, a unique, color-changing formula that adjusts to your lip’s natural pH for a personalized shade. Infused with nourishing ingredients, it keeps your lips soft, smooth, and moisturized while giving a glossy, natural finish.",
+      "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1747533703/beauty_y95omv.webp",
+      "price": 35,
+      "discount": 32,
+      "rating": 4.5,
+      "percent": 5
+    },
+    {
+      "title": "Leather Ladies Bag",
+      "details": "Upgrade your style with this sophisticated Leather Ladies Bag, designed for modern women who value both elegance and functionality. Crafted from premium quality leather, this bag features a spacious interior with multiple compartments, making it perfect for both daily use and special occasions. With its timeless design and durable construction, it’s the perfect accessory to elevate any outfit.",
+      "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1747533914/bags_u2rbar.webp",
+      "price": 20,
+      "discount": 15,
+      "rating": 4.5,
+      "percent": 5
+    },
+    {
+      "title": "Smart Watch Bluetooth",
+      "details": "Stay connected and track your fitness goals with the Smart Watch Bluetooth. This sleek and modern smartwatch pairs seamlessly with your smartphone, allowing you to receive notifications, monitor your health metrics, and control music right from your wrist. With features like heart rate monitoring, step counting, and sleep tracking, it’s the perfect companion for anyone looking to maintain a healthy, active lifestyle while staying hands-free.",
+      "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1747534122/smart-watch_cnsmke.webp",
+      "price": 200,
+      "discount": 180,
+      "rating": 4.5,
+      "percent": 5
+    },
+    {
+      "title": "Samsung S24 Ultra",
+      "details": "The Samsung S24 Ultra redefines flagship smartphone technology with its stunning design and powerhouse performance. Featuring a massive 6.8-inch Dynamic AMOLED 2X display with a 120Hz refresh rate, the S24 Ultra offers an immersive visual experience. Powered by the latest Snapdragon 8 Gen 3 processor and equipped with a professional-grade 200MP camera system, this phone is designed for capturing breathtaking photos and videos in any condition. With a long-lasting battery and 5G connectivity, the Samsung S24 Ultra keeps you connected and productive all day.",
+      "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1747534378/samsung_l3fncf.webp",
+      "price": 1500,
+      "discount": 1450,
+      "rating": 4.5,
+      "percent": 5
+    },
+    {
+      "title": "Honor X14 Plus Laptop",
+      "details": "The Honor X14 Plus Laptop is a powerful and lightweight device designed for professionals and students alike. Featuring a stunning 14-inch Full HD display and powered by the latest Intel processor, it delivers fast performance for multitasking, streaming, and productivity. With a sleek aluminum build and long battery life, the X14 Plus is perfect for those on the go who need reliability and style in one package.",
+      "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1747534540/laptop_cqmmsu.webp",
+      "price": 2500,
+      "discount": 2300,
+      "rating": 4.5,
+      "percent": 5
+    },
+    {
+      "title": "Straps Plaid Patchwork Dress",
+      "details": "Turn heads with the Straps Plaid Patchwork Dress, a perfect blend of playful patterns and casual elegance. This dress features a unique plaid patchwork design with adjustable straps for a comfortable fit. Made from lightweight, breathable fabric, it's ideal for a day out or a casual gathering. Pair it with sandals or sneakers for an effortlessly chic look.",
+      "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1747534805/dress_tykqo5.webp",
+      "price": 20,
+      "discount": 19,
+      "rating": 4.5,
+      "percent": 5
+    },
+    {
+      "title": "4 French Door Refrigerator",
+      "details": "Upgrade your kitchen with the spacious and stylish 4 French Door Refrigerator. Designed for modern homes, this fridge combines elegant design with advanced cooling technology to keep your food fresher for longer. With adjustable shelves, a built-in water dispenser, and a large freezer compartment, it offers maximum storage and convenience for your household needs.",
+      "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1747534960/fridge_ifabzd.webp",
+      "price": 2500,
+      "discount": 2484,
+      "rating": 4.5,
+      "percent": 5
+    }
+  
+  ]

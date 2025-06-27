@@ -11,6 +11,7 @@ import { categoriesModel } from '@/models/categories';
 import { categoryBaseModel } from '@/models/categoryBaseProduct';
 import { featuredDealeModel } from '@/models/featuredDeal';
 import { letestProductModel } from '@/models/latestProducts';
+import { newArrivalsModel } from '@/models/newArrivals';
 
 // ---------------------- create All flash product start -------------------------
 
@@ -85,6 +86,21 @@ async function getLatestProductById(latestId) {
 }
 
 // ------------- Latest Product Base product end --------------------
+// ------------- Nwe Arrivals Product Base product start --------------------
+
+async function getAllNewArrivals() {
+  const latestProduct = await newArrivalsModel.find().lean();
+  return replaceMongoIdInArray(latestProduct);
+}
+
+async function getNewArrivalsProductById(newArrivalsId) {
+  const singleLatestProduct = await newArrivalsModel
+    .findById(newArrivalsId)
+    .lean();
+  return replaceMongoIdInObject(singleLatestProduct);
+}
+
+// ------------- Nwe Arrivals Product Base product end --------------------
 
 // create Login
 async function findUserByCredentials(credentials) {
@@ -121,6 +137,8 @@ export {
   getCategoriesById,
   getAllLatestProduct,
   getLatestProductById,
+  getAllNewArrivals,
+  getNewArrivalsProductById,
   findUserByCredentials,
   getUserByEmail,
   getAllBooking,
