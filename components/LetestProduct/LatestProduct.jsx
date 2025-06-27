@@ -2,6 +2,7 @@ import { getAllLatestProduct } from '@/app/db/quries';
 import DealOftheDayCart from './DealOftheDayCart';
 import LetestProductCart from './LetestProductCart';
 import Link from 'next/link';
+import ViewButton from '../sheard/ViewButton';
 
 const LatestProduct = async () => {
   const latestProducts = await getAllLatestProduct();
@@ -18,8 +19,13 @@ const LatestProduct = async () => {
           ))}
         </div>
         <div className='w-full md:w-3/4 lg:w-3/4 ml-6'>
-          <h2 className='text-[#1455ac] font-bold text-2xl my-4'>
-            Latest Products
+          <h2 className='text-[#1455ac]  my-4'>
+            <span className='font-bold text-2xl'> Latest Products</span>
+            <span className='sm:hidden lg:block'>
+              <Link href={'/latestproduct'}>
+                <ViewButton />
+              </Link>
+            </span>
           </h2>
           <div className='grid grid-cols-1 lg:grid-cols-4 gap-4'>
             {latestProducts.slice(0, 8).map((product) => (

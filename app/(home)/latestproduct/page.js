@@ -9,10 +9,11 @@ import {
 } from '@/components/ui/dropdown-menu';
 import Link from 'next/link';
 import { IoIosArrowDown, IoIosSearch } from 'react-icons/io';
+import { getAllLatestProduct } from '@/app/db/quries';
+import LetestProductCart from '@/components/LetestProduct/LetestProductCart';
 
-const CategoriesPage = async () => {
-  const categories = await getAllCategories();
-
+const LatestProduct = async () => {
+  const latestProducts = await getAllLatestProduct();
   return (
     <section className='container  bg-white pt-4 pb-32 mx-auto'>
       <div className='py-6'>
@@ -55,13 +56,12 @@ const CategoriesPage = async () => {
           </div>
         </div>
 
-        <div className='grid grid-cols-1 gap-2 justify-center  lg:grid-cols-8 mt-4'>
-          {categories.map((category) => (
-            <Link
-              key={category.id}
-              href={`categories/category/${category.id}`}>
-              <CategoryCart category={category} />
-            </Link>
+        <div className='grid grid-cols-1 gap-2 justify-center  lg:grid-cols-5 mt-4'>
+          {latestProducts.map((product) => (
+            <LetestProductCart
+              key={product.id}
+              product={product}
+            />
           ))}
         </div>
       </div>
@@ -69,4 +69,4 @@ const CategoriesPage = async () => {
   );
 };
 
-export default CategoriesPage;
+export default LatestProduct;

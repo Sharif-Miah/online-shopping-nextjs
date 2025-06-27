@@ -1,8 +1,6 @@
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import Image from 'next/image';
-import airpods from '@/public/deal-product/airpods.png';
 import { FaStar } from 'react-icons/fa';
-import PriceItemComponent from '../sheard/PriceItemComponent';
 import Link from 'next/link';
 
 const LetestProductCart = ({ product }) => {

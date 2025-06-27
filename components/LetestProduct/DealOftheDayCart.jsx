@@ -40,7 +40,9 @@ const DealOftheDayCart = ({ product }) => {
           </h4>
           <div className='mt-2 flex justify-center'>
             <div className='flex gap-1'>
-              <p className='text-md mt-1 font-semibold  text-black'>${450}</p>
+              <p className='text-md mt-1 font-semibold  text-black'>
+                ${product.price}
+              </p>
             </div>
           </div>
         </div>
