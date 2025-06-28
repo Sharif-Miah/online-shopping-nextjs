@@ -27,7 +27,7 @@ const FeaturedCardItem = ({ feture }) => {
                   {feture.title}
                 </h5>
                 <div className='flex gap-1'>
-                  <p className='text-sm mt-1 text-gray-400'>${feture.price}</p>
+                  <p className='text-sm mt-1 text-black'>${feture.price}</p>
                 </div>
               </div>
             </div>

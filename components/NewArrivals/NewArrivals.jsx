@@ -13,7 +13,7 @@ const NewArrivals = async () => {
         New arrivals
       </h2>
       <AutoPlayCarosel>
-        <CarouselContent className=''>
+        <CarouselContent>
           {products.map((product) => (
             <Link
               href={`/nweArrivals/${product.id}`}

@@ -8,6 +8,7 @@ import FeaturedDeal from '../FeaturedDeal/FeaturedDeal';
 import SpecialPromoImg from '../SpecialPromoImg/SpecialPromoImg';
 import LatestProduct from '../LetestProduct/LatestProduct';
 import NewArrivals from '../NewArrivals/NewArrivals';
+import Brands from '../Brands/Brands';
 
 const MainPage = async () => {
   return (
@@ -20,6 +21,7 @@ const MainPage = async () => {
       <SpecialPromoImg />
       <LatestProduct />
       <NewArrivals />
+      <Brands />
       <DeliveryQuestion />
       <QuestionAnswer />
     </div>
