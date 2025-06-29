@@ -13,10 +13,11 @@ const WomenCarosel = ({ fetures }) => {
     <AutoPlayCarosel>
       <CarouselContent className='-ml-1'>
         {fetures.map((feture) => (
-          <WomenCaroselContent
-            feture={feture}
-            key={feture.id}
-          />
+          <Link
+            href={`/women-fashion/${feture.id}`}
+            key={feture.id}>
+            <WomenCaroselContent feture={feture} />
+          </Link>
         ))}
       </CarouselContent>
       <CarouselPrevious />

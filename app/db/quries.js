@@ -104,19 +104,19 @@ async function getNewArrivalsProductById(newArrivalsId) {
 
 // ------------- Nwe Arrivals Product Base product end --------------------
 
-// ------------- Nwe Arrivals Product Base product start --------------------
+// ------------- Women Fashion Product Base product start --------------------
 
 async function getAllWomanFashion() {
   const womanProduct = await womenFashionModel.find().lean();
   return replaceMongoIdInArray(womanProduct);
 }
 
-async function getWomanFashionProductById(women) {
-  const singleLatestProduct = await newArrivalsModel.findById(women).lean();
-  return replaceMongoIdInObject(singleLatestProduct);
+async function getWomanFashionProductById(womenId) {
+  const singleWomenProduct = await womenFashionModel.findById(womenId).lean();
+  return replaceMongoIdInObject(singleWomenProduct);
 }
 
-// ------------- Nwe Arrivals Product Base product end --------------------
+// ------------- Women Fashion Product Base product end --------------------
 
 // create Login
 async function findUserByCredentials(credentials) {
