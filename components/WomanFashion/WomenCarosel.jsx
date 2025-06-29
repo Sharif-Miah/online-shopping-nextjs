@@ -4,21 +4,19 @@ import {
   CarouselPrevious,
 } from '@/components/ui/carousel';
 
-import CaroseContent from './FeaturedCardItem/CaroseContent';
 import Link from 'next/link';
+import AutoPlayCarosel from '../Featured/Carousel';
+import WomenCaroselContent from './WomenCaroselContent';
 
-import AutoPlayCarosel from './Carousel';
-
-const FeatureCarosel = ({ fetures }) => {
+const WomenCarosel = ({ fetures }) => {
   return (
     <AutoPlayCarosel>
       <CarouselContent className='-ml-1'>
         {fetures.map((feture) => (
-          <Link
+          <WomenCaroselContent
+            feture={feture}
             key={feture.id}
-            href={`/feature-details/${feture.id}`}>
-            <CaroseContent feture={feture} />
-          </Link>
+          />
         ))}
       </CarouselContent>
       <CarouselPrevious />
@@ -27,4 +25,4 @@ const FeatureCarosel = ({ fetures }) => {
   );
 };
 
-export default FeatureCarosel;
+export default WomenCarosel;

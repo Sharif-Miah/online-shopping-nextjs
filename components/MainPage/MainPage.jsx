@@ -9,6 +9,7 @@ import SpecialPromoImg from '../SpecialPromoImg/SpecialPromoImg';
 import LatestProduct from '../LetestProduct/LatestProduct';
 import NewArrivals from '../NewArrivals/NewArrivals';
 import Brands from '../Brands/Brands';
+import WomenFashion from '../WomanFashion/WomenFashion';
 
 const MainPage = async () => {
   return (
@@ -22,6 +23,7 @@ const MainPage = async () => {
       <LatestProduct />
       <NewArrivals />
       <Brands />
+      <WomenFashion />
       <DeliveryQuestion />
       <QuestionAnswer />
     </div>

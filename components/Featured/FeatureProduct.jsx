@@ -1,4 +1,4 @@
-import { getALLfeatureImage, getAllfetureProduct } from '@/app/db/quries';
+import { getALLfeatureImage } from '@/app/db/quries';
 import SheardTitle from '../sheard/SheardTitle';
 import ViewButton from '../sheard/ViewButton';
 import FeatureCarosel from './FeatureCarosel';

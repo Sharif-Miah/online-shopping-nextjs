@@ -1,8 +1,6 @@
-import PriceItemComponent from '@/components/sheard/PriceItemComponent';
 import { Card, CardContent } from '@/components/ui/card';
 import { CarouselItem } from '@/components/ui/carousel';
 import Image from 'next/image';
-import React from 'react';
 
 const CaroseContent = ({ feture }) => {
   return (
