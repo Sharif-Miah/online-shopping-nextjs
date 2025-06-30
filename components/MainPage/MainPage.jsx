@@ -10,6 +10,7 @@ import LatestProduct from '../LetestProduct/LatestProduct';
 import NewArrivals from '../NewArrivals/NewArrivals';
 import Brands from '../Brands/Brands';
 import WomenFashion from '../WomanFashion/WomenFashion';
+import PhoneAndGadgets from '../PhoneAndGadgets/PhoneAndGadgets';
 
 const MainPage = async () => {
   return (
@@ -24,6 +25,7 @@ const MainPage = async () => {
       <NewArrivals />
       <Brands />
       <WomenFashion />
+      <PhoneAndGadgets />
       <DeliveryQuestion />
       <QuestionAnswer />
     </div>
