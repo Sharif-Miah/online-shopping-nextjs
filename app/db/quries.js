@@ -13,6 +13,7 @@ import { featuredDealeModel } from '@/models/featuredDeal';
 import { letestProductModel } from '@/models/latestProducts';
 import { newArrivalsModel } from '@/models/newArrivals';
 import { womenFashionModel } from '@/models/women-fashion';
+import { phoneAndGadgetsnModel } from '@/models/PhoneAndGadget';
 
 // ---------------------- create All flash product start -------------------------
 
@@ -117,6 +118,21 @@ async function getWomanFashionProductById(womenId) {
 }
 
 // ------------- Women Fashion Product Base product end --------------------
+// ------------- Phone & Gadgets Product Base product start --------------------
+
+async function getAllPhoneAndGadgets() {
+  const womanProduct = await phoneAndGadgetsnModel.find().lean();
+  return replaceMongoIdInArray(womanProduct);
+}
+
+async function getPhoneAndGadgetsProductById(womenId) {
+  const singleWomenProduct = await phoneAndGadgetsnModel
+    .findById(womenId)
+    .lean();
+  return replaceMongoIdInObject(singleWomenProduct);
+}
+
+// ------------- Phone & Gadgets Product Base product end --------------------
 
 // create Login
 async function findUserByCredentials(credentials) {
@@ -157,6 +173,8 @@ export {
   getNewArrivalsProductById,
   getAllWomanFashion,
   getWomanFashionProductById,
+  getAllPhoneAndGadgets,
+  getPhoneAndGadgetsProductById,
   findUserByCredentials,
   getUserByEmail,
   getAllBooking,
