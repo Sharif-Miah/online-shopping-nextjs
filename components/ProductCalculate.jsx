@@ -40,28 +40,6 @@ const ProductCalculate = ({ product }) => {
             ${product.price}
           </p>
         </div>
-        <div className='flex mt-3'>
-          <h4 className='text-md font-semibold mt-1'>Color:</h4>
-          <div className='ml-4'>
-            <button className='bg-[#9966CC] text-[#9966CC] py-1 mt-0  border-white px-[10px] rounded-3xl'>
-              0
-            </button>
-            <button className='bg-[#FAEBD7] text-[#FAEBD7]  py-1 mt-0  ml-2 border-white px-[10px] rounded-3xl'>
-              0
-            </button>
-          </div>
-        </div>
-        <div className='flex mt-3'>
-          <h4 className='text-md font-semibold mt-1'>Size:</h4>
-          <div className='ml-4'>
-            <button className='bg-[#FAEBD7] text-[#171718] text-lg py-1 mt-0  border-black px-[10px] rounded'>
-              s
-            </button>
-            <button className='bg-[#FAEBD7] text-[#171718] text-lg py-1 mt-0  ml-2 border-black px-[10px] rounded'>
-              L
-            </button>
-          </div>
-        </div>
         <div className='flex mt-2'>
           <h4 className='text-md font-semibold mt-2'>Quentity:</h4>
           <div className='ml-4 border py-0 px-3 bg-[#FAEBD7] border-black'>

@@ -1,19 +1,17 @@
-import { getAllCategories } from '@/app/db/quries';
-import CategoryCart from '@/components/categories/categoryCart';
-import { Input } from '@/components/ui/input';
+import { getAllPhoneAndGadgets } from '@/app/db/quries';
+import { IoIosArrowDown, IoIosSearch } from 'react-icons/io';
+import { getAllLatestProduct } from '@/app/db/quries';
+import LetestProductCart from '@/components/LetestProduct/LetestProductCart';
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
+import { Input } from '@/components/ui/input';
 
-import { IoIosArrowDown, IoIosSearch } from 'react-icons/io';
-import { getAllLatestProduct } from '@/app/db/quries';
-import LetestProductCart from '@/components/LetestProduct/LetestProductCart';
-
-const LatestProduct = async () => {
-  const latestProducts = await getAllLatestProduct();
+const PhoneAndGadgetsPage = async () => {
+  const phones = await getAllPhoneAndGadgets();
   return (
     <section className='container  bg-white pt-4 pb-32 mx-auto'>
       <div className='py-6'>
@@ -57,7 +55,7 @@ const LatestProduct = async () => {
         </div>
 
         <div className='grid grid-cols-1 gap-2 justify-center  lg:grid-cols-5 mt-4'>
-          {latestProducts.map((product) => (
+          {phones.map((product) => (
             <LetestProductCart
               key={product.id}
               product={product}
@@ -69,4 +67,4 @@ const LatestProduct = async () => {
   );
 };
 
-export default LatestProduct;
+export default PhoneAndGadgetsPage;
