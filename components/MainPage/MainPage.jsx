@@ -13,6 +13,8 @@ import WomenFashion from '../WomanFashion/WomenFashion';
 import PhoneAndGadgets from '../PhoneAndGadgets/PhoneAndGadgets';
 import HealthAndBeauty from '../HealthAndBeauty/HealthAndBeauty';
 import ElectronicsAndGadgets from '../ElectronicsAndGadgets/ElectronicsAndGadgets';
+import MensFashion from '../MensFashion/MensFashion';
+import KIdsFashion from '../KIdsFashion/KIdsFashion';
 
 const MainPage = async () => {
   return (
@@ -30,6 +32,8 @@ const MainPage = async () => {
       <PhoneAndGadgets />
       <HealthAndBeauty />
       <ElectronicsAndGadgets />
+      <MensFashion />
+      <KIdsFashion />
       <DeliveryQuestion />
       <QuestionAnswer />
     </div>
