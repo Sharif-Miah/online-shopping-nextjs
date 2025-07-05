@@ -118,6 +118,7 @@ async function getWomanFashionProductById(womenId) {
 }
 
 // ------------- Women Fashion Product Base product end --------------------
+
 // ------------- Phone & Gadgets Product Base product start --------------------
 
 async function getAllPhoneAndGadgets() {
