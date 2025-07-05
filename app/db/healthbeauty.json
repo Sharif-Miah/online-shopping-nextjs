@@ -1,0 +1,66 @@
+[
+    {
+      "title": "Concealer Foundation",
+      "details": "Achieve flawless coverage with the Concealer Foundation, a versatile 2-in-1 formula that conceals imperfections while providing a smooth, even finish. This lightweight yet buildable foundation effortlessly hides blemishes, dark circles, and redness, offering long-lasting wear without caking or creasing. Suitable for all skin types, its hydrating formula ensures a natural look that enhances your complexion, leaving you radiant throughout the day.",
+      "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1749359529/foundtion_rltgab.webp",
+      "price": 25,
+      "rating": 4.5,
+      "percent": 5
+    },
+    {
+      "title": "Rosemary Conditioner",
+      "details": "Revitalize your hair with our Rosemary Conditioner, expertly crafted to nourish and hydrate your locks while enhancing natural shine. Infused with organic rosemary extract, this conditioner not only detangles but also strengthens and revitalizes dull, lifeless hair. Perfect for all hair types, it leaves your hair feeling silky soft, manageable, and full of vitality.",
+      "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1749359529/conditionar_q8hyqm.webp",
+      "price": 20,
+      "rating": 4.5,
+      "percent": 5
+    },
+    {
+      "title": "Styling Gel Cream",
+      "details": "Achieve your desired hairstyle with our Styling Gel Cream! This versatile formula offers a perfect blend of hold and flexibility, making it ideal for all hair types. Whether you’re going for sleek and polished or tousled and textured, this gel cream provides a long-lasting finish without the crunch. Enriched with nourishing ingredients, it keeps your hair healthy and hydrated while offering a brilliant shine.",
+      "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1749359529/gel-cream_xpb3qy.webp",
+      "price": 50,
+      "rating": 4.5,
+      "percent": 5
+    },
+    {
+      "title": "Beauty Facial Cleanser",
+      "details": "The Beauty Facial Cleanser offers a deep and gentle cleanse, removing dirt, oil, and makeup while nourishing your skin. Formulated with hydrating and soothing ingredients, it leaves your face feeling refreshed and revitalized without stripping away its natural moisture. Suitable for all skin types, this cleanser promotes a clear, glowing complexion and is ideal for daily use.",
+      "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1751553474/cover-4_ywkuva.webp",
+      "price": 12,
+      "rating": 4.5,
+      "percent": 5
+    },
+    {
+      "title": "Beauty Jelly Lipstick",
+      "details": "Add a touch of vibrant color and hydration with the Beauty Jelly Lipstick, a unique, color-changing formula that adjusts to your lip’s natural pH for a personalized shade. Infused with nourishing ingredients, it keeps your lips soft, smooth, and moisturized while giving a glossy, natural finish.",
+      "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1747533703/beauty_y95omv.webp",
+      "price": 32,
+      "rating": 4.5,
+      "percent": 5
+    },
+    {
+      "title": "Quercetinol cleansing foam",
+      "details": "Revitalize your skin with Quercetinol Cleansing Foam, a gentle yet powerful facial cleanser designed to remove impurities while nourishing your skin. Infused with quercetin, a natural antioxidant, this foam helps protect against environmental stressors and promotes a radiant complexion. Its lightweight formula effectively cleanses without stripping your skin’s natural moisture, making it suitable for daily use on all skin types.",
+      "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1748706437/facewash_umdddt.webp",
+      "price": 10,
+      "rating": 4.5,
+      "percent": 5
+    },
+    {
+      "title": "Moisturizing Cream",
+      "details": "Experience the ultimate in skin hydration with our Moisturizing Cream. Formulated with a blend of natural ingredients, this rich cream nourishes and revitalizes your skin, leaving it soft, supple, and radiant. Perfect for daily use, it delivers long-lasting moisture without feeling greasy, making it ideal for all skin types.",
+      "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1748706438/moisturizatin_pj1jl4.webp",
+      "price": 14,
+      "rating": 4.5,
+      "percent": 5
+    },
+    {
+      "title": "Argen Hair Oil",
+      "details": "Revitalize your hair with Argen Hair Oil, a luxurious blend of natural ingredients designed to nourish and restore your locks. Infused with the goodness of argan oil, this lightweight formula penetrates deeply to hydrate, strengthen, and protect your hair from damage. Whether you’re battling dryness, frizz, or split ends, Argen Hair Oil leaves your hair soft, shiny, and manageable.",
+      "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1749359530/hear-oil_novpgj.webp",
+      "price": 45,
+      "rating": 4.5,
+      "percent": 5
+    }
+  ]
