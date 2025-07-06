@@ -1,0 +1,82 @@
+[
+    {
+      "title": "4 French Door Refrigerator",
+      "details": "Upgrade your kitchen with the spacious and stylish 4 French Door Refrigerator. Designed for modern homes, this fridge combines elegant design with advanced cooling technology to keep your food fresher for longer. With adjustable shelves, a built-in water dispenser, and a large freezer compartment, it offers maximum storage and convenience for your household needs.",
+      "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1749359583/regrigaretor_afq7jn.webp",
+      "price": 2484,
+      "rating": 4.5,
+      "percent": 5
+    },
+    {
+      "title": "Electric Table Blender",
+      "details": "Blend with ease using the Electric Table Blender, your kitchen’s go-to appliance for smoothies, soups, sauces, and more. Equipped with a powerful motor and durable stainless steel blades, this blender can handle everything from crushing ice to pureeing fruits and vegetables. With multiple speed settings and a sleek, compact design, it’s perfect for everyday use in any kitchen.",
+      "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1748706437/blendure_tkmf1p.webp",
+      "price": 250,
+      "rating": 4.5,
+      "percent": 5
+    },
+    {
+      "title": "Baby Monitor Camera",
+      "details": "Keep an eye on your little one with the Baby Monitor Camera. Featuring high-definition video and two-way audio, this camera allows you to monitor your baby from anywhere in your home. Specifications: - Video: High-definition - Features: Two-way audio Standard Uses: Provides peace of mind for parents. Ensure your baby's safety with the Baby Monitor Camera!",
+      "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1751775494/baby-cemera_hy3cce.webp",
+      "price": 80,
+      "rating": 4.5,
+      "percent": 5
+    },
+    {
+      "title": "Acer Chromebook Plus",
+      "details": "Enjoy seamless performance with the Acer Chromebook Plus. This stylish and portable laptop features a fast processor, vibrant display, and access to Google apps, perfect for browsing, streaming, and productivity. Specifications: - Display: 14-inch Full HD - Processor: Intel Standard Uses: Great for everyday tasks, education, and entertainment. Upgrade your digital life with the Acer Chromebook Plus!",
+      "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1751775494/acer-laptop_hnhbfj.webp",
+      "price": 255,
+      "rating": 4.5,
+      "percent": 5
+    },
+    {
+      "title": "HP Chromebook 14 inch",
+      "details": "Experience the versatility of the HP Chromebook 14 Inch. Designed for on-the-go users, it offers fast performance, a lightweight design, and long battery life, making it perfect for productivity and entertainment. Specifications: - Display: 14-inch Full HD - Processor: Intel Core Standard Uses: Ideal for students, professionals, and casual users. Enhance your computing experience with the HP Chromebook!",
+      "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1751775495/hp-laptop_iukotx.webp",
+      "price": 350,
+      "rating": 4.5,
+      "percent": 5
+    },
+    {
+      "title": "16x Digital Zoom Camera",
+      "details": "Get closer to the action with the 16x Digital Zoom Camera. This versatile camera offers powerful zoom capabilities, making it ideal for wildlife photography and sports events. Specifications: - Zoom: 16x optical zoom - Features: Compact design Standard Uses: Capture stunning images wherever you go. Zoom in on life with the 16x Digital Zoom Camera!",
+      "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1751775495/digital-zoom-camera_qotdvd.webp",
+      "price": 300,
+      "rating": 4.5,
+      "percent": 5
+    },
+    {
+      "title": "Full HD 60p Camcorder",
+      "details": "Create stunning videos with the Full HD 60p Camcorder. Equipped with advanced stabilization and 60 frames per second recording, it’s perfect for capturing action-packed moments. Specifications: - Resolution: Full HD 60p - Features: Advanced stabilization Standard Uses: A great choice for aspiring filmmakers and content creators. Make your videos shine with the Full HD 60p Camcorder!",
+      "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1751775494/camcoder_ucs6ah.webp",
+      "price": 250,
+      "rating": 4.5,
+      "percent": 5
+    },
+    {
+      "title": "Professional Camera",
+      "details": "Step up your photography game with the Professional Camera. Featuring a high-resolution sensor, interchangeable lenses, and advanced shooting modes, this camera is designed for serious photographers. Specifications: - Sensor: High-resolution - Features: Interchangeable lenses Standard Uses: Capture breathtaking images in any setting. Elevate your photography with the Professional Camera!",
+      "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1751775495/profetional-camera_k7pfkv.webp",
+      "price": 1000,
+      "rating": 4.5,
+      "percent": 5
+    },
+    {
+      "title": "4K HD Digital Camera",
+      "details": "Capture stunning 4K videos and high-resolution images with the 4K HD Digital Camera. Perfect for both photography enthusiasts and casual users, it features a range of shooting modes and built-in Wi-Fi for easy sharing. Specifications: - Resolution: 4K - Features: Built-in Wi-Fi Standard Uses: Ideal for travel, events, and everyday use. Upgrade your photography with the 4K HD Digital Camera!",
+      "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1751775494/digital-camera_nu4pvj.webp",
+      "price": 250,
+      "rating": 4.5,
+      "percent": 5
+    },
+    {
+      "title": "Intel Celeron N5095",
+      "details": "Unlock smooth computing with devices powered by the Intel Celeron N5095 processor. Ideal for basic tasks, web browsing, and multimedia consumption, these laptops provide reliable performance in a compact design. Specifications: - Processor: Intel Celeron N5095 - Performance: Efficient and responsive Standard Uses: Perfect for students and everyday users. Experience efficiency with Intel Celeron N5095!",
+      "imageUrl": "https://res.cloudinary.com/dnuxd0pd0/image/upload/v1751775495/intel-laptop_wmq4rl.webp",
+      "price": 340,
+      "rating": 4.5,
+      "percent": 5
+    }
+  ]
