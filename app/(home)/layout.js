@@ -3,7 +3,6 @@ import '../globals.css';
 import Navbar from '@/components/sheard/Navbar';
 import Footer from '@/components/sheard/Footer';
 import { dbConnect } from '@/services/mongo';
-import AuthProvider from '../provider/AuthProvider';
 
 export const metadata = {
   title: 'Online Shopping',

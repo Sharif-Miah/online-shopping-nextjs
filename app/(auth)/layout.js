@@ -1,4 +1,3 @@
-import localFont from 'next/font/local';
 import '../globals.css';
 import Navbar from '@/components/sheard/Navbar';
 import Footer from '@/components/sheard/Footer';
