@@ -14,6 +14,10 @@ import { letestProductModel } from '@/models/latestProducts';
 import { newArrivalsModel } from '@/models/newArrivals';
 import { womenFashionModel } from '@/models/women-fashion';
 import { phoneAndGadgetsnModel } from '@/models/PhoneAndGadget';
+import { healthAndBeutyModel } from '@/models/healthBauty';
+import { electronicAndGatesModel } from '@/models/electronicGates';
+import { mensFashionModel } from '@/models/mensfashion';
+import { kidsFashionModel } from '@/models/kidsfashion';
 
 // ---------------------- create All flash product start -------------------------
 
@@ -122,18 +126,72 @@ async function getWomanFashionProductById(womenId) {
 // ------------- Phone & Gadgets Product Base product start --------------------
 
 async function getAllPhoneAndGadgets() {
-  const womanProduct = await phoneAndGadgetsnModel.find().lean();
-  return replaceMongoIdInArray(womanProduct);
+  const gadgetsproduct = await phoneAndGadgetsnModel.find().lean();
+  return replaceMongoIdInArray(gadgetsproduct);
 }
 
-async function getPhoneAndGadgetsProductById(womenId) {
-  const singleWomenProduct = await phoneAndGadgetsnModel
-    .findById(womenId)
-    .lean();
-  return replaceMongoIdInObject(singleWomenProduct);
+async function getPhoneAndGadgetsProductById(gajesId) {
+  const singleProduct = await phoneAndGadgetsnModel.findById(gajesId).lean();
+  return replaceMongoIdInObject(singleProduct);
 }
 
 // ------------- Phone & Gadgets Product Base product end --------------------
+
+// ------------- Health & Beauty Product Base product start --------------------
+
+async function getAllHealthAndBeuty() {
+  const product = await healthAndBeutyModel.find().lean();
+  return replaceMongoIdInArray(product);
+}
+
+async function getHealthAndBeutyProductById(beutiId) {
+  const singleProduct = await healthAndBeutyModel.findById(beutiId).lean();
+  return replaceMongoIdInObject(singleProduct);
+}
+
+// ------------- Health & Beauty Product Base product end --------------------
+
+// ------------- Electronics & Gadgets Product Base product start --------------------
+
+async function getAllElectricGadgets() {
+  const product = await electronicAndGatesModel.find().lean();
+  return replaceMongoIdInArray(product);
+}
+
+async function getElectricGadgetsProductById(gadgetId) {
+  const singleProduct = await electronicAndGatesModel.findById(gadgetId).lean();
+  return replaceMongoIdInObject(singleProduct);
+}
+
+// ------------- Electronics & Gadgets Product Base product end --------------------
+
+// ------------- Mens Fashion Product Base product start --------------------
+
+async function getAllMenFashion() {
+  const product = await mensFashionModel.find().lean();
+  return replaceMongoIdInArray(product);
+}
+
+async function getMenFashionProductById(menId) {
+  const singleProduct = await mensFashionModel.findById(GadgetId).lean();
+  return replaceMongoIdInObject(singleProduct);
+}
+
+// ------------- Mens Fashion Product Base product end --------------------
+
+// ------------- Mens Fashion Product Base product start --------------------
+
+async function getAllKidsFashion() {
+  const product = await kidsFashionModel.find().lean();
+  return replaceMongoIdInArray(product);
+}
+
+async function getKidsFashionProductById(kidId) {
+  const singleProduct = await kidsFashionModel.findById(kidId).lean();
+  return replaceMongoIdInObject(singleProduct);
+}
+
+// ------------- Mens Fashion Product Base product end --------------------
 
 // create Login
 async function findUserByCredentials(credentials) {
@@ -176,6 +234,14 @@ export {
   getWomanFashionProductById,
   getAllPhoneAndGadgets,
   getPhoneAndGadgetsProductById,
+  getAllHealthAndBeuty,
+  getHealthAndBeutyProductById,
+  getAllElectricGadgets,
+  getElectricGadgetsProductById,
+  getAllMenFashion,
+  getMenFashionProductById,
+  getAllKidsFashion,
+  getKidsFashionProductById,
   findUserByCredentials,
   getUserByEmail,
   getAllBooking,
