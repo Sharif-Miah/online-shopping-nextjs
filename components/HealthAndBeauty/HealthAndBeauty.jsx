@@ -1,11 +1,11 @@
-import { getAllPhoneAndGadgets } from '@/app/db/quries';
+import { getAllHealthAndBeuty } from '@/app/db/quries';
 import SheardTitle from '../sheard/SheardTitle';
 import ViewButton from '../sheard/ViewButton';
 import Link from 'next/link';
 import HealthAndBeautyCarosel from './HealthAndBeautyCarosel';
 
 const HealthAndBeauty = async () => {
-  const phone = await getAllPhoneAndGadgets();
+  const products = await getAllHealthAndBeuty();
 
   return (
     <section className='mt-6 py-6'>
@@ -15,7 +15,7 @@ const HealthAndBeauty = async () => {
           <ViewButton />
         </Link>
         <div className='mt-6'>
-          <HealthAndBeautyCarosel fetures={phone} />
+          <HealthAndBeautyCarosel fetures={products} />
         </div>
       </div>
     </section>

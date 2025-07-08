@@ -24,4 +24,4 @@ const schema = new Schema({
 });
 
 export const kidsFashionModel =
-  mongoose.models.kidsfashion ?? mongoose.model('kidsfashion', schema);
+  mongoose.models.kidsfashions ?? mongoose.model('kidsfashions', schema);
