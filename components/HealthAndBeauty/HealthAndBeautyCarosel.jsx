@@ -14,7 +14,7 @@ const HealthAndBeautyCarosel = ({ fetures }) => {
       <CarouselContent className='-ml-1'>
         {fetures.map((feture) => (
           <Link
-            href={`/phone-and-gadets/${feture.id}`}
+            href={`/helth-beauty/${feture.id}`}
             key={feture.id}>
             <HealthAndBeautyContent feture={feture} />
           </Link>

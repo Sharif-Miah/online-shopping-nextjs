@@ -173,7 +173,7 @@ async function getAllMenFashion() {
 }
 
 async function getMenFashionProductById(menId) {
-  const singleProduct = await mensFashionModel.findById(GadgetId).lean();
+  const singleProduct = await mensFashionModel.findById(menId).lean();
   return replaceMongoIdInObject(singleProduct);
 }
 
